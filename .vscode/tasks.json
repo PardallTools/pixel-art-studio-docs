@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build HTML",
+      "type": "shell",
+      "windows": {
+        "command": ".\\venv\\bin\\Activate.ps1; .\\make.bat html",
+        "options": {
+          "shell": {
+            "executable": "powershell.exe",
+            "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-Command"]
+          }
+        }
+      },
+      "osx": {
+        "command": "make html",
+        "options": {
+          "cwd": "${workspaceFolder}",
+          "env": {
+            "PATH": "${workspaceFolder}/venv/bin:${env:PATH}"
+          }
+        }
+      },
+      "linux": {
+        "command": "make html",
+        "options": {
+          "cwd": "${workspaceFolder}",
+          "env": {
+            "PATH": "${workspaceFolder}/venv/bin:${env:PATH}"
+          }
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Build & Preview HTML",
+      "type": "chrome",
+      "request": "launch",
+      "preLaunchTask": "Build HTML",
+      "file": "${workspaceFolder}/_build/html/index.html"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+.. Pixel Art Studio Documentation documentation master file, created by
+   sphinx-quickstart on Thu Jul  9 16:12:13 2026.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Pixel Art Studio Documentation
+=========================================
+
+Pixel Art Studio is a Blender add-on for **pixel perfect pixel art texture painting**. It supports drawing and painting **pixel art inside Blender**, in the 3D Viewport on top of the model (in Object and Edit modes) and in 2D in the Image Editor. It has tools for drawing, painting, selecting, and quickly setting up the model and the viewport for pixel art. The plugin also helps with setting up and managing multiple texture densities per mesh, allowing for **uniform pixel sizes across the whole mesh or per face pixel size variation**.
+
+Summary of features:
+
+- **Pixel perfect drawing and painting pixel art tools**: brush / pencil, eraser, line, rectangle, ellipse, bucket fill (by pixels, by selected faces, by color), blur, gradient (with dithering options), opacity adjustment.
+
+   - All tools have pixel perfect line handling algorithms.
+
+- Pixel selection: rectangle, ellipse, lasso, magic wand, invert selection.
+
+   - The selection tools work on the 2D and 3D viewports, and you can drag selected pixels across the faces of the model.
+
+- 2D and 3D viewport **pixel grid overlay**.
+- **Mirror and symmetry drawing** on the 2D and 3D viewports.
+- **Color swatches and color palettes** (and a palette library with more than 500 predefined palettes).
+- **Layers** and layer management with locking, grouping, merging and visibility toggling, similar to painting programs.
+- One-click pixel size and **pixel density** setup with predefined presets.
+- One-click setup buttons to **setup the viewport for pixel art** (grid size and snapping adjusted to the pixel size) and to UV unwrap the model for instant pixel art painting, with zero hassle.
+- **Density Zones** (*optional*): assign and manage texel density values per face, allowing for **uniform pixel size across the whole mesh or different pixel sizes per face**.
+
+   - Different density zones **automatically adjust Blender's grid on the fly**, when you hover different faces of the model, in the 3D viewport.
+
+See :ref:`features-details` for detailed information about each feature.
+ 
+.. video:: _static/videos/pixelartstudio-features-overview-captioned.mp4
+  :width: 100%
+
+Where to get it
+----------------
+
+See the :doc:`installation` page.
+
+How to use it
+--------------
+
+See the :doc:`quickstart-tutorial` page.
+
+.. image:: _static/videos/pixelartstudio-final-result.gif
+
+
+Need help?
+----------
+
+See the :doc:`support` page.
+
+.. toctree::
+   :hidden:
+   :maxdepth: 4
+   :caption: Quickstart
+   
+   features
+   installation
+
+.. toctree::
+   :hidden:
+   :maxdepth: 4
+   :caption: Tutorials and Guides
+
+   quickstart-tutorial
+   advanced-tutorial
+   multi-texture-blending-tutorial
+   blending-variations-runtime
+
+.. toctree::
+   :hidden:
+   :maxdepth: 4
+   :caption: Manual
+
+   interface
+   shortcuts
+   material-setup
+   view-options
+   selection-tools
+   brushes-painting-tools
+   colors-palettes
+   rgba-channels
+   replace-colors
+   vertex-groups
+   variations
+   runtime-and-api
+   mesh-tools
+   merge-and-split-shared-vertices
+   project-settings
+
+.. toctree::
+   :hidden:
+   :maxdepth: 4
+   :caption: Support
+   
+   faq
+   troubleshooting
+   support
+   license
+   about
