@@ -65,30 +65,13 @@ See the :doc:`support` page.
    :caption: Tutorials and Guides
 
    quickstart-tutorial
-   advanced-tutorial
-   multi-texture-blending-tutorial
-   blending-variations-runtime
 
 .. toctree::
    :hidden:
    :maxdepth: 4
    :caption: Manual
 
-   interface
-   shortcuts
-   material-setup
-   view-options
-   selection-tools
-   brushes-painting-tools
-   colors-palettes
-   rgba-channels
-   replace-colors
-   vertex-groups
-   variations
-   runtime-and-api
-   mesh-tools
-   merge-and-split-shared-vertices
-   project-settings
+   manual-coming-soon
 
 .. toctree::
    :hidden:
