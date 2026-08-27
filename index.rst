@@ -10,7 +10,7 @@ Pixel Art Studio is a Blender add-on for **pixel perfect pixel art texture paint
 
 Summary of features:
 
-- **Pixel perfect drawing and painting pixel art tools**: brush / pencil, eraser, line, rectangle, ellipse, bucket fill (by pixels, by selected faces, by color), blur, gradient (with dithering options), opacity adjustment.
+- **Pixel perfect drawing and painting pixel art tools**: brush / pencil, eraser, line, rectangle, ellipse, bucket fill (by pixels, by selected faces, by color), blur, gradient (with dithering options), opacity, color picker.
 
    - All tools have pixel perfect line handling algorithms.
 
@@ -22,15 +22,15 @@ Summary of features:
 - **Mirror and symmetry drawing** on the 2D and 3D viewports.
 - **Color swatches and color palettes** (and a palette library with more than 500 predefined palettes).
 - **Layers** and layer management with locking, grouping, merging and visibility toggling, similar to painting programs.
-- One-click pixel size and **pixel density** setup with predefined presets.
-- One-click setup buttons to **setup the viewport for pixel art** (grid size and snapping adjusted to the pixel size) and to UV unwrap the model for instant pixel art painting, with zero hassle.
+- One-click pixel size and **pixel density** setup with predefined presets, as well texel density detection for existing meshes (you can have chunky pixels and fine, detailed pixels).
+- One-click setup buttons to **setup the viewport for pixel art** (grid size and snapping adjusted to the pixel size) and to UV unwrap the model for instant pixel art painting (*notice: auto UV unwrapping is very basic, for the majority of models you are still going to need to manually unwrap UVs*).
 - **Density Zones** (*optional*): assign and manage texel density values per face, allowing for **uniform pixel size across the whole mesh or different pixel sizes per face**.
 
-   - Different density zones **automatically adjust Blender's grid on the fly**, when you hover different faces of the model, in the 3D viewport.
+   - Different density zones **automatically resizes Blender's grid on the fly**, when you hover different faces of the model, in the 3D viewport.
 
 See :ref:`features-details` for detailed information about each feature.
  
-.. video:: _static/videos/pixelartstudio-features-overview-captioned.mp4
+.. video:: _static/videos/pixelartstudio-blender-features.mp4
   :width: 100%
 
 Where to get it
