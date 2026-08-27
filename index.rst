@@ -72,6 +72,7 @@ See the :doc:`support` page.
    :caption: Manual
 
    manual-coming-soon
+   shortcuts
 
 .. toctree::
    :hidden:

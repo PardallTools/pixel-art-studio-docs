@@ -16,7 +16,6 @@ author = 'Alfred Reinold Baudisch'
 extensions = ['myst_parser', 'sphinx_rtd_theme', 'sphinxcontrib.images', 'sphinxcontrib.video']
 
 templates_path = ['_templates']
-# README and IMAGES-TODO are notes for me, not pages of the manual
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'README.md', 'IMAGES-TODO.md',
                     'venv', 'path']
 

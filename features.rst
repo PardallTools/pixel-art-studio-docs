@@ -1,7 +1,7 @@
 Features
 =========================================
 
-Pixel Art Studio is a Blender add-on for **pixel perfect pixel art texture painting**. It supports drawing and painting **pixel art inside Blender**, in the 3D Viewport on top of the model (in Object and Edit modes) and in 2D in the Image Editor. It has tools for drawing and painting (including colors, palettes, layers, pressure sensitivity, bucket fill, gradients), selecting and moving pixels, and quickly setting up the model and the viewport for pixel art. The plugin also helps with setting up and managing multiple texture densities per mesh, allowing for **uniform pixel sizes across the whole mesh or per face pixel size variation**.
+Pixel Art Studio is a Blender add-on (plugin) for **pixel perfect pixel art texture painting**. It supports drawing and painting **pixel art inside Blender**, in the 3D Viewport on top of the model (in Object and Edit modes) and in 2D in the Image Editor. It has tools for drawing and painting (including colors, palettes, layers, pressure sensitivity, bucket fill, gradients), selecting and moving pixels, and quickly setting up the model and the viewport for pixel art. The plugin also helps with setting up and managing multiple texture densities per mesh, allowing for **uniform pixel sizes across the whole mesh or per face pixel size variation**.
 
 .. video:: _static/videos/pixelartstudio-blender-features.mp4
   :width: 100%
@@ -19,7 +19,7 @@ Every drawing, selection and layer tool works in the **3D Viewport and in the Im
   * All tools have **pixel perfect line handling** algorithms (with the brush and line tool, it removes the doubled L corners, with the ellipse, it creates pixel perfect circles and ellipses).  
   * **Brush** (:kbd:`B`): freehand painting as a ``Circle`` or ``Square`` brush, free size selection as well presets for ``1 2 3 4``, :kbd:`[` :kbd:`]` to increase/decrease the size on the viewport.
   * **Eraser** (:kbd:`E`): erases to transparent, with opacity control.
-  * **Adjustable opacity, applied stroke-relative**: like `Aseprite <https://www.aseprite.org/>`, dragging over the same texels twice inside one stroke applies the opacity **once**.
+  * **Adjustable opacity, applied stroke-relative**: like `Aseprite <https://www.aseprite.org/>`_, dragging over the same texels twice inside one stroke applies the opacity **once**.
   * **Line** (:kbd:`L`): pixel perfect stair steps. :kbd:`Shift` snaps to 45 degrees.
   * **Rectangle** (:kbd:`U`) and **Ellipse** (:kbd:`O`): outlined (stamped with the current brush) or filled, :kbd:`Shift` constrains to a square or a circle (the preview is the final pixels).
   * **Bucket fill** (:kbd:`G`), two modes:
