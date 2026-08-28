@@ -60,6 +60,8 @@ Setup viewport, pixel density, and canvas (texture)
 2. Setup for existing projects and models
 ================================
 
+.. _existing-not-uv-unwrapped-model:
+
 2.1. The model is not UV unwrapped and not textured
 ----------------------------------------------
 
