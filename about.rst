@@ -5,7 +5,7 @@ Pixel Art Studio is made by **Alfred Reinold Baudisch** (also known as alfredbau
 
 - Website, dev blog and experiment logs: https://alfredbaudisch.com
 - Games: https://pardallgames.com
-- Pixel Art Studio on itch.io (Free and Pro): https://splitpainter.itch.io/vertex-studio
+- Pixel Art Studio on itch.io (Free and Pro): https://alfredbaudisch.itch.io/vertex-studio
 - Pixel Art Studio on the Godot Asset Store (Free): https://store.godotengine.org/asset/alfredbaudisch/vertex-studio/
 
 Writing behind the add-on
