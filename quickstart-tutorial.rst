@@ -63,6 +63,9 @@ Setup viewport, pixel density, and canvas (texture)
 2.1. The model is not UV unwrapped and not textured
 ----------------------------------------------
 
+.. video:: _static/videos/quickstart/quickstart-setup-1-no-uv-no-texture.mp4
+  :width: 100%
+
 1. Open the ``.blend`` file, select your mesh, and then follow the same steps listed above in :ref:`new-project-setup`.
 
     - Follow all the steps (except ``Add 1m Cube``) to setup the viewport, pixel density, and canvas.
@@ -79,6 +82,9 @@ Setup viewport, pixel density, and canvas (texture)
 
 2.2. The model is UV unwrapped and doesn't have a texture
 ----------------------------------------------
+
+.. video:: _static/videos/quickstart/quickstart-setup-2-uv-no-texture.mp4
+  :width: 100%
 
 1. Open the ``.blend`` file, select your mesh, and then follow the same steps listed above in :ref:`new-project-setup`.
 
@@ -97,12 +103,18 @@ Setup viewport, pixel density, and canvas (texture)
 2.3.1. The mesh has just one pixel size (single texel density)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. video:: _static/videos/quickstart/quickstart-setup-3-uv-texture-single-density.mp4
+  :width: 100%
+
 1. If just one zone was detected in Density Zones, you can click ``Clear Zones`` to remove it, close the ``Density Zones`` section.
 2. Click ``Setup Viewport`` (it automatically detects texel density and sets up the viewport grid, where one grid unit is equal to one pixel size).
 3. Click ``Make Canvas``, now Pixel Art Studio is going to work with your existing texture and you are ready to paint.
 
 2.3.2. The mesh has multiple pixel sizes (multiple texel densities)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. video:: _static/videos/quickstart/quickstart-setup-4-uv-texture-many-densities.mp4
+  :width: 100%
 
 1. If more than one zone was detect in Density Zones, you are going to have to keep the zones, in order to keep the different pixel sizes. Pixel Art Studio is going to automatically resize and re-point Blender's grid as you hover the mesh's faces with the plugin tools, to keep one grid square at the size of one pixel for that specific face (you don't have to do anything else about it).
 2. Click ``Setup Viewport``.
