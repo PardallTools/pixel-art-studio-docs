@@ -30,4 +30,4 @@ html_css_files = [
     'custom.css',
 ]
 
-html_baseurl = "https://alfredbaudisch.github.io/godot-vertex-studio-docs/"
+html_baseurl = "https://alfredbaudisch.github.io/godot-pixel-art-studio-docs/"

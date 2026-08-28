@@ -54,10 +54,10 @@ Every drawing, selection and layer tool works in the **3D Viewport and in the Im
   * **Custom palettes** by adding swatches (add colors clicking the ``+`` and remove with :kbd:`Ctrl+click`) or by **importing PNG palettes** (for example, palettes from **Lospec**).
   * **Lospec palette library**: 500 palettes bundled with the add-on.
 
-* **Layers**
+* **Layers and Groups**
 
   * **Layers** like in painting programs: add, remove, duplicate, move up and down, merge down and merge selected, lock, visibility, opacity.
-  * **Groups**: group and ungroup layers.
+  * **Groups**: group and ungroup layers, group opacity and visibility (affects all layers inside the group).
 
 * **Pixel size and pixel density (texel density)**
 

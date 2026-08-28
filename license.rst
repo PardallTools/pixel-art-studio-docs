@@ -1,7 +1,7 @@
 License
 =======
 
-This license applies to all versions of Pixel Art Studio, Free and Pro.
+This license applies to all versions of Pixel Art Studio.
 
 You may:
 
