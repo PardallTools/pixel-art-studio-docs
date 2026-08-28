@@ -4,7 +4,7 @@ Installation
 Download and install
 ------------------------------
 
-- Download Pixel Art Studio from the <TODO LINKS>.
+- Download Pixel Art Studio from its itch.io page: https://alfredbaudisch.itch.io/pixel-art-studio
 - In Blender, go to ``Edit > Preferences > Add-ons``, expand ``Add-on Settings`` at the top right corner and choose ``Install from Disk...``.
 - Find the zip file you downloaded and choose it.
 - Now, activate the addon by clicking the checkbox next to ``Pixel Art Studio``.
