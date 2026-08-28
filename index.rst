@@ -43,9 +43,6 @@ How to use it
 
 See the :doc:`quickstart-tutorial` page.
 
-.. image:: _static/videos/pixelartstudio-final-result.gif
-
-
 Need help?
 ----------
 
@@ -73,6 +70,7 @@ See the :doc:`support` page.
 
    manual-coming-soon
    shortcuts
+   density-zones
 
 .. toctree::
    :hidden:
