@@ -51,4 +51,4 @@ When I pixel paint, weird lines appear across the texture
 
 .. image:: _static/images/trouble-weird-lines.png
 
-This is related to bad and incorrect UVs. See :ref:`bad-uvs-troubleshooting` for more details.
+This is a bug from v1.0.0 and v1.0.1. It's been fixed since v1.0.2.
