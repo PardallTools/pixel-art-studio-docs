@@ -12,7 +12,7 @@ Not only it has tools with pixel line handling algorithms, it solves one of the 
 
 Summary of features:
 
-- **Pixel perfect drawing and painting pixel art tools**: brush / pencil, eraser, path and polygon (bezier curve), line, rectangle, ellipse, bucket fill (by pixels, by selected faces, by color), blur, gradient (with dithering options), opacity, color picker, pressure sensitivity.
+- **Pixel perfect drawing and painting pixel art tools**: brush / pencil, eraser, path and polygon (bezier curves and filled polygons), line, rectangle, ellipse, bucket fill (by pixels, by selected faces, by color), blur, gradient (with dithering options), opacity, color picker, pressure sensitivity.
 
    - All tools have pixel perfect line handling algorithms.
 
