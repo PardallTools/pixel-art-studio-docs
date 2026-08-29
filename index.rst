@@ -8,9 +8,11 @@ Pixel Art Studio Documentation
 
 Pixel Art Studio is a Blender add-on for **pixel perfect pixel art texture painting**. It supports drawing and painting **pixel art inside Blender**, in the 3D Viewport on top of the model (in Object and Edit modes) and in 2D in the Image Editor. It has tools for drawing and painting (including colors, palettes, layers, pressure sensitivity, bucket fill, gradients), selecting and moving pixels, and quickly setting up the model and the viewport for pixel art. The plugin also helps with setting up and managing multiple texture densities per mesh, allowing for **uniform pixel sizes across the whole mesh or per face pixel size variation**.
 
+Not only it has tools with pixel line handling algorithms, it solves one of the biggest pain points when doing Pixel Art with Blender: pixel size stays consistent regardless of zoom level. One texel stays always one texel, which means always one pixel at the size of the texel defined by you in the whole mesh or per face.
+
 Summary of features:
 
-- **Pixel perfect drawing and painting pixel art tools**: brush / pencil, eraser, line, rectangle, ellipse, bucket fill (by pixels, by selected faces, by color), blur, gradient (with dithering options), opacity, color picker, pressure sensitivity.
+- **Pixel perfect drawing and painting pixel art tools**: brush / pencil, eraser, path and polygon (bezier curve), line, rectangle, ellipse, bucket fill (by pixels, by selected faces, by color), blur, gradient (with dithering options), opacity, color picker, pressure sensitivity.
 
    - All tools have pixel perfect line handling algorithms.
 

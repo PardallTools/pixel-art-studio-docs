@@ -33,6 +33,8 @@ Tools
      - :kbd:`U`
    * - **Ellipse**
      - :kbd:`O`
+   * - **Path and Polygon** (bezier curve tool)
+     - :kbd:`C`
    * - **Bucket fill**
      - :kbd:`G`
    * - **Gradient**
@@ -125,6 +127,28 @@ View and canvas
      - :kbd:`Ctrl+Shift+Z` or :kbd:`Ctrl+Y`
    * - **Cancel the stroke you are drawing, then de-activate the tool**
      - :kbd:`ESC`
+
+Path and Polygon tool
+-----------
+
+.. list-table::
+   :widths: 65 35
+   :header-rows: 1
+
+   * - Action
+     - Keybinding
+   * - **Start a new path**
+     - Left click
+   * - **Add a new hard corner to the path**
+     - Left click and release
+   * - **Add a new smooth corner to the path**
+     - Left click, hold and drag the mouse
+   * - **Close polygon**
+     - Left click and release at the first point
+   * - **Close the path at the current point**
+     - :kbd:`Enter`
+   * - **Cancel and clear the path**
+     - :kbd:`Backspace`
 
 Mouse
 -----
