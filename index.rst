@@ -64,6 +64,7 @@ See the :doc:`support` page.
    :caption: Tutorials and Guides
 
    quickstart-tutorial
+   tutorial-how-to-blockout-colors
 
 .. toctree::
    :hidden:
