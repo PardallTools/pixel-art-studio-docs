@@ -45,6 +45,15 @@ You can try:
 
     - If your mesh is already textured, then make sure you assign the correct texel and pixel density and click ``Make Canvas``. See the workflow in :ref:`existing-project-setup`.
 
+When I move a selection from one face to another, the pixels get distorted or duplicated
+------------------------------------------------------------------------------------------------
+
+.. image:: _static/images/trouble-selecteyeslasso01.png
+
+.. image:: _static/images/trouble-selecteyeslasso02.png
+
+- **Pixels distorted, stretched or resized:** this behaviour is correct if your mesh has different texel densities, then when moving between different densities, pixels are going to get placed onto UV islands that have another density.
+- **Pixels duplicated:** this behaviour is correct if you land the selection on a face that shares the UV island with other faces.
 
 When I pixel paint, weird lines appear across the texture
 ------------------------------------------------------------------------------------------------
