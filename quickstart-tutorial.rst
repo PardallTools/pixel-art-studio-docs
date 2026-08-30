@@ -4,9 +4,9 @@ Quickstart Tutorial
 
 This is a how to use / quickstart guide / tutorial to get you started with Pixel Art Studio, a Blender add-on.
 
-**********************
+**************************************************
 What is Pixel Art Studio?
-*************************
+**************************************************
 
 See the :doc:`features` page for more details.
 
@@ -23,7 +23,10 @@ Setup viewport, pixel density, and canvas (texture)
 TL;DR Super-quick how to to get started
 =========================================
 
-**Model already has a texture?**
+Model already has a texture?
+-----------------------------------------------------------
+
+.. image:: _static/images/quick-quicksetup-01.png
 
 1. Click ``Detect Density Zones``
 2. Click ``Make Canvas``
@@ -31,7 +34,10 @@ TL;DR Super-quick how to to get started
 
 Done! You are ready to paint with Pixel Art Studio!
 
-**Model doesn't have a texture?**
+Model doesn't have a texture?
+-----------------------------------------------------------
+
+.. image:: _static/images/quick-quicksetup-02.png
 
 1. Choose a density preset in the presets dropdown (chunky big pixels or thin small pixels?)
 2. Click ``Setup Viewport``
