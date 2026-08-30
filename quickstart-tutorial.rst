@@ -20,10 +20,34 @@ See the :doc:`installation` page for more details.
 Setup viewport, pixel density, and canvas (texture)
 ***************************************************
 
+TL;DR Super-quick how to to get started
+=========================================
+
+**Model already has a texture?**
+
+1. Click ``Detect Density Zones``
+2. Click ``Make Canvas``
+3. Click ``Setup Viewport``
+
+Done! You are ready to paint with Pixel Art Studio!
+
+**Model doesn't have a texture?**
+
+1. Choose a density preset in the presets dropdown (chunky big pixels or thin small pixels?)
+2. Click ``Setup Viewport``
+3. Click ``Setup Pixel Art Canvas`` to create the texture
+4. UVs are messed up? Go to Edit Mode, select all vertices, and then click ``Pixel Art Unwrap``.
+
+    - If needed, click ``Setup Pixel Art Canvas`` again to create a new texture with a different resolution.
+
+Done! You are ready to paint with Pixel Art Studio!
+
+For more details and to understand the process, see the sections below. Didn't like the pixel size/texture density? See the sections below as well.
+
 .. _new-project-setup:
 
 1. Setup for new projects (new blend file)
-==================================
+================================================
 
 .. video:: _static/videos/quickstart/quickstart01-setup.mp4
   :width: 100%
@@ -58,12 +82,12 @@ Setup viewport, pixel density, and canvas (texture)
 .. _existing-project-setup:
 
 2. Setup for existing projects and models
-================================
+==============================================
 
 .. _existing-not-uv-unwrapped-model:
 
 2.1. The model is not UV unwrapped and not textured
-----------------------------------------------
+-----------------------------------------------------------
 
 .. video:: _static/videos/quickstart/quickstart-setup-1-no-uv-no-texture.mp4
   :width: 100%
@@ -83,7 +107,7 @@ Setup viewport, pixel density, and canvas (texture)
 .. _existing-uv-unwrapped-model:
 
 2.2. The model is UV unwrapped and doesn't have a texture
-----------------------------------------------
+--------------------------------------------------------------------
 
 .. video:: _static/videos/quickstart/quickstart-setup-2-uv-no-texture.mp4
   :width: 100%
@@ -96,14 +120,14 @@ Setup viewport, pixel density, and canvas (texture)
 3. If you are not satisfied with the pixel sizes laid on your UVs, you can change the density and re-run ``Setup Pixel Art Canvas``.
 
 2.3. The model is UV unwrapped and has a texture
-----------------------------------------------
+------------------------------------------------
 
 1. Open the ``.blend`` file with the model that you want to texture paint with Pixel Art Studio.
 2. The first step is detecting the texel density of your existing texture: does it have multiple sizes or a single pixel size?
 3. ``Density Zones`` manages meshes with different texel densities per face (multiple pixel sizes in the same mesh). Expand ``Density Zones`` and click ``Detect Density Zones``.
 
 2.3.1. The mesh has just one pixel size (single texel density)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. video:: _static/videos/quickstart/quickstart-setup-3-uv-texture-single-density.mp4
   :width: 100%
@@ -113,7 +137,7 @@ Setup viewport, pixel density, and canvas (texture)
 3. Click ``Make Canvas``, now Pixel Art Studio is going to work with your existing texture and you are ready to paint.
 
 2.3.2. The mesh has multiple pixel sizes (multiple texel densities)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. video:: _static/videos/quickstart/quickstart-setup-4-uv-texture-many-densities.mp4
   :width: 100%
