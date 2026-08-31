@@ -28,5 +28,24 @@ This documentation website and its contents are licensed under the MIT License -
 Third Party Licenses
 --------------------
 
-@icons by Valentin Fossati - https://github.com/Voxybuns/at-icons
-Copyright (c) 2026–present Valentin Fossati (Voxybuns) and contributors
+ASEPRITE ALGORITHMS 
+^^^^^^^^^^^^^^^^^^^^
+
+- Source: https://github.com/aseprite/aseprite
+- License: MIT
+- Holders: Copyright (C) 2018-2025 Igara Studio S.A., Copyright (C) 2001-2018 David Capello, Line stepping after Alois Zingl's Bresenham work (MIT)
+
+TOOL ICONS
+^^^^^^^^^^
+
+- Source: Aseprite Default Theme sheets, refs/aseprite/data/extensions/ aseprite-theme/sheet.png and .../dark/sheet.png
+- License: Creative Commons Attribution 4.0 International http://creativecommons.org/licenses/by/4.0/
+- Holders: Copyright (C) 2009-2017 David Capello and Ilija Melentijevic http://www.aseprite.org/
+- Changes made: glyphs cropped out of the sheet (16x16, or 13x13 for the symmetry ones) and upscaled 4x nearest neighbor so Blender's UI scaling cannot blur them. Each `_light` copy is the same cell taken from the theme's own DARK sheet.
+
+INTERFACE ICONS: @icons
+^^^^^^^^^^^^^^^^^^^^^^^
+
+- Source: https://github.com/Voxybuns/at-icons
+- License: MIT
+- Holders: Copyright (c) 2026-present Valentin Fossati (Voxybuns) and contributors
