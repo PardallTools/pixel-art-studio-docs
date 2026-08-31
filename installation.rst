@@ -16,7 +16,7 @@ Download and install
 .. image:: _static/images/install-03.png
 
 .. note::	
-    Pixel Art Studio requires **Blender 5.1 or higher**.
+    Pixel Art Studio is compatible with **Blender 3.6, Blender 4.0+ through Blender 5.1**. But the **officially supported version is Blender 5.1**.
 
 Open the addon
 --------------

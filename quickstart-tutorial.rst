@@ -163,7 +163,7 @@ Drawing and Painting with Pixel Art Studio
 
 2. Click any of the tools in the sidebar to activate the Pixel Art Studio canvas, and from now on, shortcuts start working and you can draw and paint.
 
-Check the :doc:`shortcuts` page for the full list of shortcuts.
+Check the :doc:`shortcuts` page for the full list of shortcuts and also how to customize them.
 
 .. image:: _static/images/activate-shortcuts.gif
 
