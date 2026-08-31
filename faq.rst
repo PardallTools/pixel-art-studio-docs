@@ -16,6 +16,13 @@ Does it have shortcuts / keymaps? Can I customize them?
 
 Yes, it has shortcuts and they are customizable. See :doc:`shortcuts`.
 
+What is the version of Blender required?
+------------------------------------------
+
+Developed and fully tested with Blender 5.1. The recommended version is Blender 5.1.
+
+But it's also compatible with Blender 3.6, Blender 4.0+ through Blender 5.1.
+
 Can I draw, paint, edit and select pixel art in the 3D viewport?
 ----------------------------------------------------------------
 
@@ -25,11 +32,6 @@ Can I draw, paint, edit and select pixel art in Blender's Image Editor 2D viewpo
 ------------------------------------------------------------------------------------
 
 Yes, support for painting and drawing pixel art in both 2D and 3D viewports is implemented.
-
-What is the version of Blender required?
-------------------------------------------
-
-Blender 5.1 or higher.
 
 .. _faq-custom-shader-and-material:
 

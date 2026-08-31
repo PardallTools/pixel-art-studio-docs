@@ -101,4 +101,4 @@ Every drawing, selection and layer tool works in the **3D Viewport and in the Im
   * Customizable shortcuts and keymaps: see :doc:`shortcuts`.
 
 .. note::
-    Pixel Art Studio requires **Blender 5.1 or higher**
+    Pixel Art Studio is compatible with **Blender 3.6, Blender 4.0+ through Blender 5.1**. But the **officially supported version is Blender 5.1**.
