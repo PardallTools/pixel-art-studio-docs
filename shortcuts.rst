@@ -1,7 +1,7 @@
 Shortcuts
 =========================================
 
-Pixel Art Studio's shortcuts live **inside the tool you have armed**. They are not registered in Blender's keymap, they only answer while a Pixel Art Studio tool is active.
+Pixel Art Studio's shortcuts live **inside the tool you have armed**. They are not registered in Blender's keymap, they only answer while a Pixel Art Studio tool is active. To customize shortcuts, see :ref:`bindable-shortcuts`.
 
 .. warning::
     **The first tool has to be activated by clicking its button** in the sidebar. Until you click one of the tool buttons (like the ``Brush``), there is no Pixel Art Studio tool listening and Blender keeps catching every key. After you manually activate a tool, all shortcuts below work.
@@ -52,7 +52,7 @@ Tools
    * - **Lasso select**
      - :kbd:`Q`
    * - **Magic Wand**
-     - no key, click the button
+     - :kbd:`W`
 
 Pressing the key of the tool currently in use, de-activates it, the same as clicking its button again.
 
@@ -72,7 +72,7 @@ Brush and colors
    * - **Swap primary and secondary color**
      - :kbd:`X`
    * - **Walk to the next swatch**
-     - :kbd:`Shift+X`
+     - :kbd:`Ctrl+Shift+X`
    * - **Pixel Perfect on / off**
      - :kbd:`P`
 
@@ -161,8 +161,8 @@ Mouse
      - Mouse
    * - **Paint, draw the shape, drag out the selection**
      - Left click and drag
-   * - **Temporary eyedropper** (from any paint tool)
-     - :kbd:`Alt` + left click
+   * - **Temporary eyedropper / color picker** (from any paint tool)
+     - :kbd:`Shift+X` + left click (Blender's default)
    * - **Move the selected pixels**
      - Drag from inside the selection
    * - **Duplicate the selected pixels instead of moving them**
@@ -179,10 +179,15 @@ Mouse
 .. _bindable-shortcuts:
 
 Custom shortcuts and quick access
----------------------
+--------------------------------------------
 
-Pixel Art Studio does not have bindable and configurable shortcuts. Shortcuts are handled inside the add-on's own modal operators, which is what keeps them out of Blender's way.
+It's possible to customize every single shortcut used by Pixel Art Studio in :menuselection:`Edit --> Preferences --> Add-ons --> Pixel Art Studio --> Preferences --> Shortcuts`:
 
-Everything can be quickly accessed with :kbd:`F`, to open the tools and settings popup over the viewports (again, just make sure a tool is armed first by clicking its button, then the :kbd:`F` shortcut works):
+.. image:: _static/images/settings-shortcuts.png
+
+Tools and settings popup
+----------------------------------------------
+
+Everything can be quickly accessed with :kbd:`F`, to open the tools and settings popup over the viewports, at mouse position (again, just make sure a tool is armed first by clicking its button, then the :kbd:`F` shortcut works):
 
 .. image:: _static/images/activate-tools-popup.gif

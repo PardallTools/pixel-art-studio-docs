@@ -11,6 +11,11 @@ Does it require external dependencies?
 
 No, it's made 100% with Python using only Blender's APIs. It is a native Blender plugin. 
 
+Does it have shortcuts / keymaps? Can I customize them?
+----------------------------------------------
+
+Yes, it has shortcuts and they are customizable. See :doc:`shortcuts`.
+
 Can I draw, paint, edit and select pixel art in the 3D viewport?
 ----------------------------------------------------------------
 

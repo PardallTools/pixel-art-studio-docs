@@ -98,6 +98,7 @@ Every drawing, selection and layer tool works in the **3D Viewport and in the Im
   * **Tools and settings popup**: press :kbd:`F` over either editor for a floating panel with the tools and their settings.
   * Painting on the model works in **Object and in Edit mode**, and you can alternate between Pixel Art Studio's tools and Blender's own tools on the fly.
   * The canvas is a normal Blender image: it's packed into the .blend, and it renders and exports like any other texture.
+  * Customizable shortcuts and keymaps: see :doc:`shortcuts`.
 
 .. note::
     Pixel Art Studio requires **Blender 5.1 or higher**
