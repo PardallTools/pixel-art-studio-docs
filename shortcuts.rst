@@ -1,7 +1,7 @@
 Shortcuts
 =========================================
 
-Pixel Art Studio's shortcuts live **inside the tool you have armed**. They are not registered in Blender's keymap, they only answer while a Pixel Art Studio tool is active. To customize shortcuts, see :ref:`bindable-shortcuts`.
+Pixel Art Studio's shortcuts live **inside the tool you have armed**. Shortcuts only work while a Pixel Art Studio tool is active and they never conflict with Blender's own keys. Every shortcut can be customized and re-bound, see :ref:`bindable-shortcuts`.
 
 .. warning::
     **The first tool has to be activated by clicking its button** in the sidebar. Until you click one of the tool buttons (like the ``Brush``), there is no Pixel Art Studio tool listening and Blender keeps catching every key. After you manually activate a tool, all shortcuts below work.
@@ -54,7 +54,7 @@ Tools
    * - **Magic Wand**
      - :kbd:`W`
 
-Pressing the key of the tool currently in use, de-activates it, the same as clicking its button again.
+To de-activate, click the armed tool's button again, or press :kbd:`ESC` over the viewport.
 
 Brush and colors
 ----------------
@@ -129,7 +129,7 @@ View and canvas
      - :kbd:`ESC`
 
 Path and Polygon tool
------------
+---------------------
 
 .. list-table::
    :widths: 65 35
@@ -145,10 +145,12 @@ Path and Polygon tool
      - Left click, hold and drag the mouse
    * - **Close polygon**
      - Left click and release at the first point
-   * - **Close the path at the current point**
-     - :kbd:`Enter`
+   * - **Finish the path as drawn**, leaving it open
+     - :kbd:`Enter` or :kbd:`Space`
+   * - **Undo a point and go back to the last point**
+     - :kbd:`Ctrl+Z` (undo)
    * - **Cancel and clear the path**
-     - :kbd:`Backspace`
+     - :kbd:`ESC`, :kbd:`Backspace` or :kbd:`Delete`
 
 Mouse
 -----
@@ -178,12 +180,15 @@ Mouse
 
 .. _bindable-shortcuts:
 
-Custom shortcuts and quick access
+Custom shortcuts
 --------------------------------------------
 
-It's possible to customize every single shortcut used by Pixel Art Studio in :menuselection:`Edit --> Preferences --> Add-ons --> Pixel Art Studio --> Preferences --> Shortcuts`:
+It's possible to customize every shortcut used by Pixel Art Studio in :menuselection:`Edit --> Preferences --> Add-ons --> Pixel Art Studio --> Preferences --> Shortcuts`. 
 
 .. image:: _static/images/settings-shortcuts.png
+
+.. tip::
+  Click ``Restore Default Shortcuts`` to restore all shortcuts to their default values.
 
 Tools and settings popup
 ----------------------------------------------
