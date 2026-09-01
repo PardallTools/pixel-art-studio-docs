@@ -5,7 +5,11 @@ Pixel Art Studio is made by **Alfred Reinold Baudisch** (also known as Pardall a
 
 - Website, dev blog and experiment logs: https://alfredbaudisch.com
 - Games: https://pardallgames.com
-- Pixel Art Studio on itch.io: https://alfredbaudisch.itch.io/pixel-art-studio
+- Pixel Art Studio on the marketplaces:
+
+  - `itch.io <https://alfredbaudisch.itch.io/pixel-art-studio>`_
+  - `Superhive (aka Blender Market) <https://superhivemarket.com/products/pixel-art-studio?ref=10057>`_
+  - `Gumroad <https://alfredbaudisch.gumroad.com/l/pixel-art-studio>`_
 
 Help, bugs and licensing
 ------------------------
