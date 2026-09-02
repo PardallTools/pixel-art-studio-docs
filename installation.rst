@@ -9,6 +9,7 @@ Download and install
   - `itch.io <https://alfredbaudisch.itch.io/pixel-art-studio>`_
   - `Superhive (aka Blender Market) <https://superhivemarket.com/products/pixel-art-studio?ref=10057>`_
   - `Gumroad <https://alfredbaudisch.gumroad.com/l/pixel-art-studio>`_
+  - `Hotmart (payment options for Brazilians) <https://go.hotmart.com/F107441454W?dp=1>`_
 
 - In Blender, go to ``Edit > Preferences > Add-ons``, expand ``Add-on Settings`` at the top right corner and choose ``Install from Disk...``.
 - Find the zip file you downloaded and choose it.
