@@ -61,3 +61,10 @@ When I pixel paint, weird lines appear across the texture
 .. image:: _static/images/trouble-weird-lines.png
 
 This is a bug from v1.0.0 and v1.0.1. It's been fixed since v1.0.2.
+
+When I draw and paint with the brush, the strokes appear in multiple places
+------------------------------------------------------------------------------------------------
+
+.. image:: _static/images/troubleoverlappinguvs.gif
+
+This is because of overlapping UVs.
