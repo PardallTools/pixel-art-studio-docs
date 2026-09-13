@@ -35,6 +35,13 @@ ASEPRITE ALGORITHMS
 - License: MIT
 - Holders: Copyright (C) 2018-2025 Igara Studio S.A., Copyright (C) 2001-2018 David Capello, Line stepping after Alois Zingl's Bresenham work (MIT)
 
+CLEANEDGE ROTATION
+^^^^^^^^^^^^^^^^^^^^
+
+- Source: https://gist.github.com/torcado194/e2794f5a4b22049ac0a41f972d14c329
+- License: MIT
+- Holders: Copyright (C) 2022 torcado
+
 TOOL ICONS
 ^^^^^^^^^^
 
@@ -49,3 +56,34 @@ INTERFACE ICONS: @icons
 - Source: https://github.com/Voxybuns/at-icons
 - License: MIT
 - Holders: Copyright (c) 2026-present Valentin Fossati (Voxybuns) and contributors
+
+Aseprite.ttf
+^^^^^^^^^^^^^
+
+"Aseprite" pixel face by David Capello (https://www.aseprite.org/)
+(TrueType conversion of aseprite_font.png).
+
+Copyright (C) 2001-2023 David Capello
+
+Licensed under the Creative Commons Attribution 4.0 International licence
+(CC BY 4.0): http://creativecommons.org/licenses/by/4.0/
+
+Px437_IBM_VGA_8x16.ttf
+^^^^^^^^^^^^^^^^^^^^^^^
+
+"Px437 IBM VGA 8x16" from The Ultimate Oldschool PC Font Resource by
+VileR (https://int10h.org/oldschool-pc-fonts/)
+
+Licensed under the Creative Commons Attribution-ShareAlike 4.0
+International licence (CC BY-SA 4.0):
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Kenney Pixel Fonts
+^^^^^^^^^^^^^^^^^^
+
+Kenney Mini, Kenney Mini Square, Kenney Mini Square Mono, Kenney Pixel,
+Kenney Pixel Square, Kenney High and Kenney High Square
+https://kenney.nl/assets/kenney-fonts
+
+Licensed under Creative Commons CC0:
+https://creativecommons.org/publicdomain/zero/1.0/
