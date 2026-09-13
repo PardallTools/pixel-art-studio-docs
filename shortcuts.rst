@@ -3,16 +3,29 @@ Shortcuts
 
 Pixel Art Studio's shortcuts live **inside the tool you have armed**. Shortcuts only work while a Pixel Art Studio tool is active and they never conflict with Blender's own keys. Every shortcut can be customized and re-bound, see :ref:`bindable-shortcuts`.
 
-.. warning::
-    **The first tool has to be activated by clicking its button** in the sidebar. Until you click one of the tool buttons (like the ``Brush``), there is no Pixel Art Studio tool listening and Blender keeps catching every key. After you manually activate a tool, all shortcuts below work.
-  
-.. warning::
-    **To get Blender's shortcuts back, you have to manually deactivate the tool.** Click the armed tool's button again to de-activate it (or press :kbd:`ESC` over the viewport). While a tool is armed it owns the keys below, so for example, Blender's :kbd:`G` and :kbd:`B` does not work.
-
-.. image:: _static/images/activate-shortcuts.gif
-
 .. note::
     On macOS every :kbd:`Ctrl` shortcut below maps to :kbd:`Cmd`.
+
+Activator Shortcut
+-------------------
+
+.. image:: _static/images/activator-shorcut-on-off.gif
+
+**For Pixel Art Studio shortcuts to work, you have to activate a tool first by clicking its button in the sidebar or better yet, you can press ";",** the ``Activator Shortcut`` (by default :kbd:`;` semicolon). By default, the activator toggles on the ``Brush`` and if you had a previously used tool, it will activate your last used tool.
+
+That means you can alternate between Pixel Art Studio and Blender shortcuts back and forth by pressing :kbd:`;` over the viewport:
+
+- Press :kbd:`;` to activate a Pixel Art Studio tool, then freely use Pixel Art Studio shortcuts.
+- Press :kbd:`;` again to deactivate the tool and use Blender shortcuts.
+- Press :kbd:`;` again to activate Pixel Art Studio and the tool you had last used, so on and so forth.
+- You can freely alternate back and forth, it always re-activates the tool you were using last, this way the workflow can be pretty dynamic without needing to click buttons in the sidebar.
+
+The ``Activator Shortcut`` can be changed in :menuselection:`Edit --> Preferences --> Add-ons --> Pixel Art Studio --> Shortcuts`.
+
+.. tip::
+  You can also :kbd:`ESC ESC` (two presses of :kbd:`ESC` quickly) as the ``Activator Shortcut`` to toggle the tool on and off.
+
+.. image:: _static/images/arm-pixelartstudio.png
 
 Tools
 -----
@@ -50,7 +63,7 @@ Tools
    * - **Ellipse select**
      - :kbd:`Shift+M`
    * - **Lasso select**
-     - :kbd:`Q`
+     - :kbd:`K`
    * - **Magic Wand**
      - :kbd:`W`
 

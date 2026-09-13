@@ -161,17 +161,16 @@ Drawing and Painting with Pixel Art Studio
 
     - If you want a 2D and a 3D view side by side, use the Pixel Art Studio workspace.
 
-2. Click any of the tools in the sidebar to activate the Pixel Art Studio canvas, and from now on, shortcuts start working and you can draw and paint.
+2. Click any of the tools in the sidebar to activate the Pixel Art Studio canvas or press :kbd:`;` (semicolon, the ``Activator Shortcut``), and from now on, shortcuts start working and you can draw and paint.
 
 Check the :doc:`shortcuts` page for the full list of shortcuts and also how to customize them.
 
-.. image:: _static/images/activate-shortcuts.gif
+.. image:: _static/images/activator-shorcut-on-off.gif
 
-.. warning::
-    **The first tool has to be activated by clicking its button** in the sidebar. Until you click one of the tool buttons (like the ``Brush``),, there is no Pixel Art Studio tool listening and Blender keeps catching every key. After you manually activate a tool, all shortcuts below work.
-  
-.. warning::
-    **To get Blender's shortcuts back, you have to manually deactivate the tool.** Click the armed tool's button again to de-activate it (or press :kbd:`ESC` over the viewport). While a tool is armed it owns the keys below, so for example, Blender's :kbd:`G` and :kbd:`B` does not work.
+.. tip::
+    **To get Blender's shortcuts back, you have to manually deactivate the tool.** **Press** :kbd:`;` (semicolon, the ``Activator Shortcut``) anytime again to deactivate the tool and get Blender's shortcuts back or **click the armed tool's button** again to de-activate it. While a tool is armed it owns the shortcuts (custom Pixel Art Studio shortcuts), so for example, Blender's :kbd:`G` and :kbd:`B` does not work.
+
+    You can press :kbd:`;` **back and forth to toggle between Pixel Art Studio and Blender's shortcuts** (it always re-activates the tool you were using last), so the workflow can be pretty dynamic without needing to click buttons in the sidebar.
 
 .. note::
     If you activate Pixel Art Studio in the Image Editor, it's going to work ONLY in the Image Editor. To also use it in the 3D viewport, you have to also activate the desired tool in the 3D viewport.
