@@ -12,19 +12,24 @@ Not only it has tools with pixel line handling algorithms, it solves one of the 
 
 Summary of features:
 
-- **Pixel perfect drawing and painting pixel art tools**: brush / pencil, eraser, line, rectangle, ellipse, bucket fill (by pixels, by selected faces, by color, with bleed and UV dilation), blur, scramble, gradient (with dithering options), opacity, color picker, text tool, path, bézier curve, filled polygons, pressure sensitivity.
+- **Pixel perfect drawing and painting pixel art tools**: brush / pencil, eraser, line, rectangle, ellipse, bucket fill (by pixels, by selected faces, by color), blur, scramble, gradient (with dithering options), shading brush, spray can, text tool, path, bézier curve, filled polygons, opacity, color picker, pressure sensitivity.
 
    - All tools have pixel perfect line handling algorithms.
    - Custom brushes.
+   - **Fill and dithering patterns** for all drawing tools (brush, shapes, eraser, bucket fill, etc), with custom patterns.
+   - **Bleed (UV dilation)** for the brush, eraser, line, bucket fill and gradient.
+   - Straight, 45 degrees and isometric angled lines.
 
 - Pixel **selections**: rectangle, ellipse, lasso, magic wand, invert selection.
 
    - The selection tools work on the 2D and 3D viewports, and you can drag selected pixels across the faces of the model.
    - Selections can be made by topology, which selects and fills half-pixels (sub texels) in diagonals.
+   - **Transform** layers and selections (scale, rotate, skew) and flip them horizontally and vertically.
 
 - 2D and 3D viewport **pixel grid overlay**.
+- **Tiled Mode** in the Image Editor, to paint seamless textures.
 - **Mirror and symmetry drawing** on the 2D and 3D viewports.
-- **Color swatches and color palettes** (and a palette library with more than 500 predefined palettes).
+- **Colors and palettes**: Blender's color wheel inside the panel, color swatches, color palettes (and a palette library with more than 500 predefined palettes), pick colors from any object and any area of the viewport.
 - **Layers** and layer management with locking, grouping, merging, visibility toggling and blending modes similar to painting programs.
 
   - Non-destructible **adjustments** (brightness and contrast, color curves and HSL), stackable, per layer.
@@ -32,11 +37,25 @@ Summary of features:
   - Export layers as PNG and paste or import images as layers.
 
 - One-click pixel size and **pixel density** setup with predefined presets, as well texel density detection for existing meshes (you can have chunky pixels and fine, detailed pixels).
-- One-click setup buttons to **setup the viewport for pixel art** (grid size and snapping adjusted to the pixel size) and to UV unwrap the model for instant pixel art painting (*notice: auto UV unwrapping is very basic, for the majority of models you are still going to need to manually unwrap UVs*).
+- One-click setup buttons to **setup the viewport for pixel art** (grid size and snapping adjusted to the pixel size).
+- **UV tools made for pixel art**:
+
+  - **Pixel Art Unwrap**: lays each face flat with its exact shape and pixel density, no stretched pixels. *Quick Unwrap Model* unwraps the whole model from any mode.
+  - **Share UVs**: stack faces on the same UV spot, so they paint the same pixels (ex: paint the 8 sides of a cylinder only once).
+  - **Keep Together (Join)**: neighbouring faces stay connected as one UV island (ex: a character's face, a vehicle's front).
+  - Flip UV islands, keep pinned UVs, and lists to manage the shared and joined faces.
+
 - **Density Zones** (*optional*): assign and manage texel density values per face, allowing for **uniform pixel size across the whole mesh or different pixel sizes per face**.
 
    - Different density zones **automatically resizes Blender's grid on the fly**, when you hover different faces of the model, in the 3D viewport.
-   
+   - Each zone has a pixel aspect (pixels taller than wide or the opposite, common in PS1 models), and Pixel Art Unwrap respects it.
+   - Apply Density Zones to Faces while you are still creating the model, to test different pixel sizes.
+
+- **Game engine integration** with **Godot, Unity and Unreal Engine**: models and textures are exported when you save in Blender, and the game project gets pixel art materials automatically.
+
+   - Auto-export to glTF and FBX on save, into any folder.
+   - Every glTF export out of Blender writes the texture as unlit pixel art.
+
 - Customizable shortcuts for EVERYTHING.
 
 See :ref:`features-details` for detailed information about each feature.
