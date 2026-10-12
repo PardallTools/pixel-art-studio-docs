@@ -63,7 +63,7 @@ Every drawing, selection and layer tool works in the **3D Viewport and in the Im
     * :kbd:`Ctrl+A` selects all, :kbd:`Alt+A` deselects, :kbd:`Ctrl+I` inverts.
     * **Select by Topology** (:kbd:`Ctrl+Shift+T`, 3D Viewport only): selects the whole shape of the faces, including the half pixels along diagonal UV edges, so you can paint and fill them.
 
-  * **Drag and move selections**: directly in the texture in the Image Editor and on the model in 3D, across the faces. :kbd:`Ctrl` while dragging duplicates the selection instead of moving it.
+  * **Drag and move selections**: directly in the texture in the Image Editor and on the model in 3D, across the faces. :kbd:`Ctrl` while dragging duplicates the selection instead of moving it, and :kbd:`Shift` keeps the move on one axis.
   * **Transform** (:kbd:`Ctrl+T`): scale, rotate and skew a selection or a whole layer, in the Image Editor and on the model in 3D. :kbd:`Enter` confirms, :kbd:`Esc` cancels.
   * **Flip** selections horizontally (:kbd:`Shift+H`) and vertically (:kbd:`Shift+V`).
   * **Copy, cut and paste across layers** (:kbd:`Ctrl+C` / :kbd:`Ctrl+X` / :kbd:`Ctrl+V`), and paste as a new layer (:kbd:`Ctrl+Shift+V`).

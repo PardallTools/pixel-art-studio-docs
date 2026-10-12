@@ -187,6 +187,7 @@ Selections
 - If you have a selection you can add to the selection by holding down :kbd:`Shift` and selecting more, you can even use different selection tools to keep adding their selections.
 - Hold :kbd:`Alt` to remove from selection.
 - Hold :kbd:`Ctrl` to duplicate what is being dragged with the selection.
+- Hold :kbd:`Shift` while dragging from inside the selection to move it along one axis only (:kbd:`Ctrl+Shift` duplicates along one axis).
 
 .. note::
     A selection affects just the currently active layer.

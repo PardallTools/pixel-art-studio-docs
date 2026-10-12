@@ -110,6 +110,8 @@ Selection
      - :kbd:`Alt` while dragging
    * - **Duplicate the selection**
      - :kbd:`Ctrl` while dragging
+   * - **Move the selection along one axis**
+     - :kbd:`Shift` while dragging from inside the selection
    * - **Copy the selected pixels**
      - :kbd:`Ctrl+C`
    * - **Cut the selected pixels**
@@ -182,6 +184,8 @@ Mouse
      - Drag from inside the selection
    * - **Duplicate the selected pixels instead of moving them**
      - :kbd:`Ctrl` + drag from inside the selection
+   * - **Move or duplicate the selected pixels along one axis** (horizontal or vertical, whichever you drag further; on the model, along the pixel rows of the face)
+     - :kbd:`Shift` / :kbd:`Ctrl+Shift` + drag from inside the selection
    * - **Constrain**: 45 degrees for the line, square for the rectangle, circle for the ellipse
      - :kbd:`Shift` while dragging
    * - **Drag a symmetry ruler** (Image Editor)
