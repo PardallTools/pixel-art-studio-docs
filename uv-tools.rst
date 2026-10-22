@@ -77,6 +77,7 @@ A character split in several meshes (body, arms, a hat) sharing one texture is *
 * One report line: ``arms, body and hat together: 50 px/m on the 256x256 texture T_Char``.
 * The layout is the same whichever of them is the active one.
 * A linked duplicate is one mesh: laid out once, and both copies wear it.
+* Meshes in Edit Mode on **another texture** are unwrapped by the same click, one layout per texture (``Quick Unwrap Model`` from Object Mode leaves them alone instead).
 
 .. _uv-tools-section:
 

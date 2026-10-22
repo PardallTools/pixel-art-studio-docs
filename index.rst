@@ -14,7 +14,7 @@ Summary of features:
 
 - **Open your model and paint**: a model with UVs and a texture needs no setup, click a tool and paint. Models made of several objects on one texture paint as one.
 - **Quick Setup**: see the pixel size on the model before choosing it, then make the texture, the material and the UVs in one click. ``Try Pixel Densities`` changes the pixel size of a model you already painted, keeping the painting.
-- **Pixel perfect drawing and painting pixel art tools**: brush / pencil, eraser, line, rectangle, ellipse, bucket fill (by pixels, by selected faces, by color, with bleed and UV dilation), blur, scramble, gradient (with dithering options), opacity, eyedropper, text tool, path, bézier curve, filled polygons, shading, pixel spray, pressure sensitivity.
+- **Pixel perfect drawing and painting pixel art tools**: brush / pencil, eraser, line, rectangle, ellipse, bucket fill (by pixels, by selected faces, by color, with bleed), blur, scramble, gradient (with dithering options), opacity, eyedropper, text tool, path, bézier curve, filled polygons, shading, pixel spray, pressure sensitivity.
 
    - All tools have pixel perfect line handling algorithms.
    - Custom brushes.
@@ -31,7 +31,7 @@ Summary of features:
 - 2D and 3D viewport **pixel grid overlay**.
 - **Mirror and symmetry drawing** on the 2D and 3D viewports.
 - **Tiled Mode** in the Image Editor, to paint seamless textures and see them repeat as you draw.
-- **Color swatches and color palettes** (and a palette library with more than 500 predefined palettes).
+- **Color swatches and color palettes** (and a palette library with 500 predefined palettes).
 - **Layers** and layer management with locking, grouping, merging, visibility toggling and blending modes similar to painting programs.
 
   - Non-destructible **adjustments** (brightness and contrast, color curves and HSL), stackable, per layer.

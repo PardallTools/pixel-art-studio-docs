@@ -67,6 +67,7 @@ Every drawing, selection and layer tool works in the **3D Viewport and in the Im
 
     * Patterns stay **locked to the pixel grid**: strokes, fills and shapes meet without seams, on the flat texture and across the model's UV seams.
     * ``Transparent``: lays a pattern over art that is already there.
+    * Inspired by GraphicsGale: the tool decides which texels get paint, the pattern which of the two colors each one takes.
 
   * **Noise** and **Color Jitter**: hand placed looking texture (grime, grass, rust, wood grain) that never shifts when you paint over the same area again.
   * **Primary and secondary color**: :kbd:`Alt+X` to alternate between 2 colors, and ``Next Swatch`` to walk the swatches of your palette.

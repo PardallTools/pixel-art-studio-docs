@@ -87,6 +87,7 @@ On the model:
 
 * **Drag a selection across the faces of the model** like a sticker: it folds over each edge like paper and keeps facing the way you push it, even when the faces are separate UV islands far apart in the texture. The ants travel with it.
 * It works on curved and irregular UVs (a cylinder cap cut into triangles, for example), across faces with different pixel sizes (the drawing takes the new pixel size), and on faces that share UVs.
+* :kbd:`Shift` holds the move to **the pixel rows and columns of the face you grabbed**, not to the screen's axes: on a face seen at an angle, or turned in the texture, the selection still slides along its own rows.
 * **The whole drawing or nothing**: if part of it would land off the model, or on a face hidden in Edit Mode, it holds at the last place it fitted and jumps on once it fits again.
 
 .. note::

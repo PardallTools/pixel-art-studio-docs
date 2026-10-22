@@ -66,7 +66,7 @@ Where custom brushes are saved:
 Fill patterns
 -------------
 
-A pattern decides which of the **two colors** each painted texel takes: its set texels take the primary color, the gaps take the secondary color. The tool still decides which texels get paint. **Real dithering in one click**, on every drawing tool.
+A pattern decides which of the **two colors** each painted texel takes: its set texels take the primary color, the gaps take the secondary color. The tool still decides which texels get paint (the way GraphicsGale does it). **Real dithering in one click**, on every drawing tool.
 
 .. image:: _static/images/v2/brushes-and-patterns-patterns-gallery.png
 
