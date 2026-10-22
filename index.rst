@@ -46,7 +46,7 @@ Summary of features:
 - **UV tools made for pixel art**: ``Pixel Art Unwrap`` and ``Quick Unwrap Model`` (the whole model, from any mode, in one click), with the same pixel size on every face, tilted or flat.
 
    - ``Stack UVs``: paint one face and see it on all of them (barrel staves, cylinder sides, crate planks).
-   - ``Keep UVs Together (Join)``: curved parts stay one clean island.
+   - ``Keep UVs Together (Join)``: curved parts stay one clean island. For organic models, join their faces and tweak the ``Unwrap Options`` if needed.
    - Several meshes on the same texture are unwrapped together, in one packed layout with no overlaps.
 
 - **Density Zones** (*optional*): assign and manage texel density values per face, allowing for **uniform pixel size across the whole mesh or different pixel sizes per face**.

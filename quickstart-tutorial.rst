@@ -161,6 +161,8 @@ See :doc:`quick-setup` for every option.
 .. note::
     ``Quick Unwrap`` gives every face an island of its own, which is what you want for low poly and hard surface models. Curved parts can be kept as one island with ``Keep UVs Together (Join)``, and faces that should show the same pixels can be stacked with ``Stack UVs`` (see :doc:`uv-tools`, and the tutorial :doc:`tutorial-uvs-without-the-uv-editor`). Quick Setup's preview shows them the way they're going to be laid out.
 
+    For organic models, join their faces with ``Keep UVs Together (Join)`` and tweak the ``Unwrap Options`` if needed (see :doc:`uv-tools`).
+
 .. _existing-uv-unwrapped-model:
 
 2.2. The model is UV unwrapped and doesn't have a texture

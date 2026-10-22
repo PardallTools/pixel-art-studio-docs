@@ -133,7 +133,7 @@ Every drawing, selection and layer tool works in the **3D Viewport and in the Im
   * ``Quick Unwrap Model``: unwraps the whole model from any mode and puts your mode and selection back, in one undo step. **The eye beside it previews the new UVs on the model** at any pixel size, before anything changes.
   * **Several meshes on one texture** (a character in several parts, for example) are unwrapped as one packed layout with no overlaps.
   * ``Stack UVs``: **paint it once, see it everywhere** (barrel staves, cylinder sides, wheel spokes), and every unwrap keeps them stacked.
-  * ``Keep UVs Together (Join)``: curved parts stay one clean island, unfolded flat or relaxed so the stretch is spread thin. Imported models (glTF) whose faces only touch are offered a weld first.
+  * ``Keep UVs Together (Join)``: curved parts stay one clean island, unfolded flat or relaxed so the stretch is spread thin. Imported models (glTF) whose faces only touch are offered a weld first. **For organic models**, join their faces and tweak the ``Unwrap Options`` if needed.
 
     * ``Keep Shape``: keeps the UV proportions you drew through every unwrap.
 
