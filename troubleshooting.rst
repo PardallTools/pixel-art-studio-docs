@@ -10,8 +10,6 @@ Pixel Art Studio tells you what's wrong in a few places, so look there first:
 * **Greyed buttons**: hover them and the tooltip says why.
 * **The game engine sections** in the ``Others`` panel: a red line under what's wrong, and the last result line.
 
-.. image:: _static/images/v2/trouble-no-canvas-warning.png
-
 **************************************************
 Painting and selecting
 **************************************************
@@ -109,6 +107,16 @@ When I move a selection from one face to another, the pixels get distorted or du
 * **Pixels distorted, stretched or resized**: expected when the faces have different texel densities, the pixels land on an island of another density and are resampled to it.
 * **Pixels duplicated**: expected when you land the selection on faces that share their UVs with other faces (stacked or overlapping).
 * ``A topology selection is tied to the geometry and cannot be moved. Turn Match Topology off and select again to move these pixels``: a ``Topology`` selection (orange) never moves. Turn ``Topology`` off and select again.
+
+"No Pixel Art Studio canvas here" on a model that has a texture (before 1.4)
+-----------------------------------------------------------------------------
+
+.. image:: _static/images/v2/trouble-no-canvas-warning.png
+
+Before 1.4, a model with a texture had to be turned into a canvas first (``Make Canvas`` or ``Setup Pixel Art Canvas``), and a click on it said this.
+
+* **Update to 1.4**: a model with UVs and a texture needs no setup, click a tool and paint.
+* In 1.4 the warning only shows for a model with **no texture** at all: click the big ``Setup`` button (see :doc:`quick-setup`).
 
 **************************************************
 Setup and pixel size
