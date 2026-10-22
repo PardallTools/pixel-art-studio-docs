@@ -30,7 +30,7 @@ That's it, nothing else is needed! **Your UVs and your texture are used as they 
 .. warning::
     When you save the ``.blend`` after painting, the canvas is packed inside it **and the texture file on disk is written** with the painted result, in its own format. Keep a copy of the original file if it matters.
 
-Model doesn't have a texture? (or a new model)
+New model? Model still doesn't have a texture?
 ==============================================
 
 1. Click the big ``Setup`` button at the top of the ``Pixel Art Studio`` panel (or click on the model with any tool).
