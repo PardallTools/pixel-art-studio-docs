@@ -85,8 +85,13 @@ Change it any time in ``Edit > Preferences > Add-ons > Pixel Art Studio``, tab `
 1. Setup for new projects
 ***************************************************
 
+Click the ``Setup`` button at the top, experiment with the texel densities (pixel size), click ``Next``, create the texture, paint! That's it.
+
 .. video:: _static/videos/v2/quickstart-quick-setup.mp4
   :width: 100%
+
+Everything in details
+=====================
 
 1. Open the sidebar with :kbd:`N` and click the ``Pixel Art Studio`` tab.
 
@@ -154,7 +159,7 @@ See :doc:`quick-setup` for every option.
 3. ``Create Texture``: every face of the model is laid flat at the pixel size and packed on whole pixels, and the texture is made at the size that layout needs.
 
 .. note::
-    ``Quick Unwrap`` gives every face an island of its own, which is what you want for low poly and hard surface models. Curved parts can be kept as one island with ``Keep UVs Together (Join)``, and faces that should show the same pixels can be stacked with ``Stack UVs`` (see :doc:`uv-tools`). Quick Setup's preview shows them the way they're going to be laid out.
+    ``Quick Unwrap`` gives every face an island of its own, which is what you want for low poly and hard surface models. Curved parts can be kept as one island with ``Keep UVs Together (Join)``, and faces that should show the same pixels can be stacked with ``Stack UVs`` (see :doc:`uv-tools`, and the tutorial :doc:`tutorial-uvs-without-the-uv-editor`). Quick Setup's preview shows them the way they're going to be laid out.
 
     For organic models you may still prefer to UV unwrap by hand before texture painting them with Pixel Art Studio. See :ref:`existing-uv-unwrapped-model`.
 
