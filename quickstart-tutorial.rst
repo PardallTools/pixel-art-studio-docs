@@ -2,239 +2,278 @@
 Quickstart Tutorial
 ###################
 
-This is a how to use / quickstart guide / tutorial to get you started with Pixel Art Studio, a Blender add-on.
+This is the quick way to go from a model to painting pixel art on it with Pixel Art Studio, a Blender add-on. For a full walkthrough from scratch see :doc:`tutorial-first-model`, and for a model that already has a texture see :doc:`tutorial-existing-model`.
 
-**************************************************
-What is Pixel Art Studio?
-**************************************************
-
-See the :doc:`features` page for more details.
-
-**********************
-Installation and setup
-**********************
-
-See the :doc:`installation` page for more details.
+Not installed yet? See the :doc:`installation` page.
 
 ***************************************************
-Setup viewport, pixel density, and canvas (texture)
+Super quick start
 ***************************************************
 
-TL;DR Super-quick how to to get started
-=========================================
+Everything starts in the sidebar: in the 3D Viewport press :kbd:`N`, click the ``Pixel Art Studio`` tab and select your model.
 
-Model already has a texture?
------------------------------------------------------------
+.. _just-paint:
 
-.. image:: _static/images/quick-quicksetup-01.png
+Existing model, with UVs and textures: I just want to paint
+===========================================================
 
-1. Click ``Detect Density Zones``
-2. Click ``Make Canvas``
-3. Click ``Setup Viewport``
+.. image:: _static/images/v2/quickstart-textured-model.png
 
-Done! You are ready to paint with Pixel Art Studio!
+1. Click a tool (the ``Brush``, for example).
+2. Paint on the model.
 
-Model doesn't have a texture?
------------------------------------------------------------
+That's it, nothing else is needed! **Your UVs and your texture are used as they are**: the first stroke adds Pixel Art Studio's layers to the texture (it becomes ``Layer 1``) and sets it to ``Closest``, so the pixels stay crisp. No pixel density, no ``Setup Viewport``, no density zones.
 
-.. image:: _static/images/quick-quicksetup-02.png
+* :kbd:`Ctrl+Z` takes the stroke back, and a second :kbd:`Ctrl+Z` gives you the texture back exactly as it was.
+* Want to try other pixel sizes, or new UVs? See :ref:`existing-textured-unwrap`.
 
-1. Choose a density preset in the presets dropdown (chunky big pixels or thin small pixels?)
-2. Click ``Setup Viewport``
-3. Click ``Setup Pixel Art Canvas`` to create the texture
-4. UVs are messed up? Go to Edit Mode, select all vertices, and then click ``Pixel Art Unwrap``.
+.. warning::
+    When you save the ``.blend`` after painting, the canvas is packed inside it **and the texture file on disk is written** with the painted result, in its own format. Keep a copy of the original file if it matters.
 
-    - If needed, click ``Setup Pixel Art Canvas`` again to create a new texture with a different resolution.
+Model doesn't have a texture? (or a new model)
+==============================================
 
-Done! You are ready to paint with Pixel Art Studio!
+1. Click the big ``Setup`` button at the top of the ``Pixel Art Studio`` panel (or click on the model with any tool).
 
-For more details and to understand the process, see the sections below. Didn't like the pixel size/texture density? See the sections below as well.
+   .. image:: _static/images/v2/quickstart-untextured-model.png
+
+2. ``Quick Setup`` opens: select a pixel size and see it on the model, live (:kbd:`Ctrl+Wheel` goes through the sizes).
+3. Click ``Next``.
+
+   .. image:: _static/images/v2/quickstart-quick-setup-step1.png
+
+4. Click ``Create Texture``.
+
+   .. image:: _static/images/v2/quickstart-quick-setup-step2.png
+
+Done! You are ready to paint with Pixel Art Studio! The ``Quick Unwrap`` box (ticked) gives the model new pixel perfect UVs at that pixel size: untick it to keep the UVs the model already has.
+
+.. image:: _static/images/v2/quickstart-bare-painted.png
+
+For more details and to understand the process, see the sections below. Didn't like the pixel size? See the sections below as well.
+
+.. _shortcut-question:
+
+The first tool you click: shortcuts
+===================================
+
+The first time you click a tool, Pixel Art Studio asks how the keyboard works while a tool is active:
+
+.. image:: _static/images/v2/shortcuts-mode-question.png
+
+* ``Alongside Blender`` (default): Blender's shortcuts (:kbd:`G`, :kbd:`S`, :kbd:`R`, :kbd:`Tab`...) keep working while you paint, and Pixel Art Studio uses the keys Blender leaves free. The main keys:
+
+  * :kbd:`D`: the tools popup (every tool, the brush size and the colors, at the pointer), also with no tool active
+  * :kbd:`Shift+Alt+B`: ``Brush``
+  * :kbd:`Shift+Alt+E`: ``Eraser``
+  * :kbd:`Alt+X`: swap the primary and secondary colors
+  * Hold :kbd:`Alt` and click: ``Eyedropper``
+
+* ``Pixel Art Studio Only``: while a tool is active the keys are Pixel Art Studio's, like in Aseprite. Blender's shortcuts come back when the tool is put away. The main keys:
+
+  * :kbd:`F`: the tools popup
+  * :kbd:`B`: ``Brush``
+  * :kbd:`E`: ``Eraser``
+  * :kbd:`X`: swap the primary and secondary colors
+  * Hold :kbd:`Alt` and click: ``Eyedropper``
+
+Change it any time in ``Edit > Preferences > Add-ons > Pixel Art Studio``, tab ``Shortcuts``. Every shortcut of both modes: :doc:`shortcuts`.
 
 .. _new-project-setup:
 
-1. Setup for new projects (new blend file)
-================================================
+***************************************************
+1. Setup for new projects
+***************************************************
 
-.. video:: _static/videos/quickstart/quickstart01-setup.mp4
+.. video:: _static/videos/v2/quickstart-quick-setup.mp4
   :width: 100%
 
-1. To start using Pixel Art Studio with a new ``.blend`` file, delete the default cube and make sure you have no object selected.
+1. Open the sidebar with :kbd:`N` and click the ``Pixel Art Studio`` tab.
 
-    - If you already have a model or a blend file where you want to use Pixel Art Studio, keep following along in this section (and skip step 5), make sure you select your existing mesh. Then after done, see the next section :ref:`existing-project-setup`.
+   - If you want the texture and the model side by side, click the ``Pixel Art Studio`` workspace tab at the top of the window first (see :ref:`installation-workspace`).
+   - Already have a model or a blend file? Follow along with your mesh selected, then see :ref:`existing-project-setup`.
 
-2. Expand the sidebar with :kbd:`N` and click ``Pixel Art Studio``.
-3. In ``Setup``, choose a Pixel Density Preset or "Custom". The pixel density determines the size of the pixels in the mesh. **Lower density: larger pixels, higher density: smaller pixels** (and thus more details, with the cost of requiring more texture space).
-    
-    - If you choose "Custom", expand the ``Pixel Density`` section, set the ``Texel Density`` value and press ``Apply Texel Density``.
+2. Select the mesh (Blender's default cube is fine) and click the big ``Setup`` button. ``Quick Setup`` opens, with the model framed in a maximized 3D Viewport and the pixel grid drawn on it.
+3. Select a pixel size. The pixel density determines the size of the pixels on the mesh. **Lower density: larger pixels, higher density: smaller pixels** (and thus more details, with the cost of requiring more texture space). The sidebar and the text at the top left say what one pixel is, and the texture size it needs.
 
-4. Click ``Setup Viewport`` to match Blender's viewport grid and snapping with the pixel size from the density selected.
+   .. list-table::
+      :widths: 40 30 30
+      :header-rows: 1
 
-    - After clicking ``Setup Viewport``, one grid unit is equal to one pixel.
-    - Shading is automatically set to ``Flat > Texture`` (not required, but recommended for pixel art).
+      * - Preset
+        - One pixel on the model
+        - 1 m is
+      * - ``Low · 16``
+        - 6.25 cm
+        - 16 pixels
+      * - ``Medium · 50``
+        - 2 cm
+        - 50 pixels
+      * - ``High · 110``
+        - ~9 mm
+        - 110 pixels
+      * - ``Very High · 220``
+        - ~4.5 mm
+        - 220 pixels
 
-5. Click ``Add 1m Cube`` to add a new cube that is one meter in size, adjusted to the grid and texel density: the smaller the density, less pixels fit per meter (the unit of measure for pixel density is ``px/m``).
-6. Click ``Setup Pixel Art Canvas``, to create a new texture and automatically assign a material with the texture and no interpolation.
+   - Your own pixel size: type it in ``Custom px/m``. Your own presets show up beside the others (see :ref:`density-presets`).
+   - Orbit and zoom around the model as usual, the grid follows. :kbd:`Ctrl+Z` goes back to the size you tried before.
 
-    - You can also check ``Pixel Grid Layer`` to create a new layer containing a generated color grid or a pixel checker texture, so you can visualize each pixel.
-7. You are now ready to start painting! Change the view to ``Front Orthographic``, zoom in to see that each grid unit is equal to one pixel in the checker texture.
+4. Click ``Next``. Step 2 opens on the ``Texture Size`` this model needs at that pixel size.
+
+   - ``Quick Unwrap`` (ticked): new UVs for the model, every face flat at the pixel size (see :doc:`uv-tools`).
+   - ``Base Color`` (or ``Transparent``): what the canvas starts filled with.
+   - ``Pixel Grid Layer``: adds a grid layer with one cell per pixel, so you can see and count the pixels on the model.
+   - ``Setup Viewport`` (ticked): puts Blender's grid on the pixel size, **one grid square is exactly one pixel**, so you model on the pixel grid (see :ref:`setup-viewport` for what it changes).
+
+5. Click ``Create Texture``. You get the texture with three layers (``Layer 1`` to paint on, the ``Pixel Art Canvas`` grid layer and a locked ``Background``) and an unlit material with crisp pixels, all as one undo step.
+6. You are now ready to start painting! Hide the ``Pixel Art Canvas`` layer (its eye in ``Layers``) when you are done checking the pixel sizes.
+
+See :doc:`quick-setup` for every option.
 
 .. tip::
 
-    If you want bigger or smaller pixels, you can choose another density preset and click ``Setup Pixel Art Canvas`` again or manually type a new ``Texel Density``, click ``Apply Texel Density`` and ``Setup Pixel Art Canvas`` again. Blender's grid follows automatically.
+    Want bigger or smaller pixels later, even after painting? Click ``Try Pixel Densities`` (``Pixel Density`` panel): try other sizes on the model, then ``Apply New Density``, and **your painting is kept**, scaled to the new pixel size. See :ref:`quick-setup-try`.
 
-    If ``Setup Viewport`` turns red, click it again to fix the viewport (it does not touch your texture).
-
+.. note::
+    Prefer a dialog? ``Setup Pixel Art Canvas`` (``Setup`` panel) still makes the texture in one go from the preset in ``Setup``, and ``Setup Viewport`` and ``Quick Unwrap Model`` are still buttons of their own. See :doc:`setup-and-canvas`.
 
 .. _existing-project-setup:
 
+***************************************************
 2. Setup for existing projects and models
-==============================================
+***************************************************
 
 .. _existing-not-uv-unwrapped-model:
 
 2.1. The model is not UV unwrapped and not textured
------------------------------------------------------------
+===================================================
 
-.. video:: _static/videos/quickstart/quickstart-setup-1-no-uv-no-texture.mp4
-  :width: 100%
-
-1. Open the ``.blend`` file, select your mesh, and then follow the same steps listed above in :ref:`new-project-setup`.
-
-    - Follow all the steps (except ``Add 1m Cube``) to setup the viewport, pixel density, and canvas.
-
-2. After follow the steps and creating the canvas and the texture with ``Setup Pixel Art Canvas``, switch to ``Edit Mode``, select all vertices, and then click ``Pixel Art Unwrap``.
-3. You can choose another density preset or manually type a new one in ``Texel Density``, and re-run ``Setup Pixel Art Canvas`` and ``Pixel Art Unwrap`` until you are happy with the result.
+1. Open the ``.blend`` file, select your mesh and click the big ``Setup`` button.
+2. Select a pixel size, then ``Next``. ``Quick Unwrap`` is ticked (and held ticked, for a model with no UVs).
+3. ``Create Texture``: every face of the model is laid flat at the pixel size and packed on whole pixels, and the texture is made at the size that layout needs.
 
 .. note::
-    Pixel Art Studio ``Pixel Art Unwrap`` is basic, mostly aimed at rectangular and cube shapes, as all it does is a per-face planar projection with no island rotation and scaling, adds a texel island margin and then it automatically packs the UV islands.
-    
-    In most cases, it's recommended that you manually UV Unwrap meshes before texture painting them with Pixel Art Studio. See :ref:`existing-uv-unwrapped-model`.
+    ``Quick Unwrap`` gives every face an island of its own, which is what you want for low poly and hard surface models. Curved parts can be kept as one island with ``Keep UVs Together (Join)``, and faces that should show the same pixels can be stacked with ``Stack UVs`` (see :doc:`uv-tools`). Quick Setup's preview shows them the way they're going to be laid out.
+
+    For organic models you may still prefer to UV unwrap by hand before texture painting them with Pixel Art Studio. See :ref:`existing-uv-unwrapped-model`.
 
 .. _existing-uv-unwrapped-model:
 
 2.2. The model is UV unwrapped and doesn't have a texture
---------------------------------------------------------------------
+=========================================================
 
-.. video:: _static/videos/quickstart/quickstart-setup-2-uv-no-texture.mp4
-  :width: 100%
+.. image:: _static/images/v2/quick-setup-preview-uvs.png
 
-1. Open the ``.blend`` file, select your mesh, and then follow the same steps listed above in :ref:`new-project-setup`.
+1. Open the ``.blend`` file, select your mesh and click the big ``Setup`` button.
+2. Click ``The Model UVs`` (``Preview UVs:``): the grid is drawn through your UVs, so you see the pixel size they get, and any stretched pixels (above, right).
+3. Select a pixel size and click ``Next``. The ``Quick Unwrap`` box is unticked: **your UV layout is kept**, it's only scaled to the pixel size and its islands are snapped on whole pixels (nothing is unwrapped or packed again).
+4. ``Create Texture``, and you are ready to paint.
 
-    - Follow all the steps (except ``Add 1m Cube``) to setup the viewport, pixel density, and canvas.
-
-2. As soon as you finish setting up the canvas and the texture with ``Setup Pixel Art Canvas``, you are ready to paint.
-3. If you are not satisfied with the pixel sizes laid on your UVs, you can change the density and re-run ``Setup Pixel Art Canvas``.
+Didn't like what your UVs look like at that pixel size? Click ``Quick Unwrap`` instead (above, left): the preview shows the UVs Pixel Art Studio would make, and ``Create Texture`` lays them out.
 
 2.3. The model is UV unwrapped and has a texture
-------------------------------------------------
+================================================
 
-1. Open the ``.blend`` file with the model that you want to texture paint with Pixel Art Studio.
-2. The first step is detecting the texel density of your existing texture: does it have multiple sizes or a single pixel size?
-3. ``Density Zones`` manages meshes with different texel densities per face (multiple pixel sizes in the same mesh). Expand ``Density Zones`` and click ``Detect Density Zones``.
+1. Select the model.
+2. Click a tool and paint. Nothing else is needed (see :ref:`just-paint`).
 
-2.3.1. The mesh has just one pixel size (single texel density)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _existing-textured-unwrap:
 
-.. video:: _static/videos/quickstart/quickstart-setup-3-uv-texture-single-density.mp4
-  :width: 100%
+Optional: other pixel sizes or new UVs for an existing model
+------------------------------------------------------------
 
-1. If just one zone was detected in Density Zones, you can click ``Clear Zones`` to remove it, close the ``Density Zones`` section.
-2. Click ``Setup Viewport`` (it automatically detects texel density and sets up the viewport grid, where one grid unit is equal to one pixel size).
-3. Click ``Make Canvas``, now Pixel Art Studio is going to work with your existing texture and you are ready to paint.
+Only if you want to change the model's pixel size, or give it new UVs with Pixel Art Studio. For painting, skip this whole part.
 
-2.3.2. The mesh has multiple pixel sizes (multiple texel densities)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Try Pixel Densities**
 
-.. video:: _static/videos/quickstart/quickstart-setup-4-uv-texture-many-densities.mp4
-  :width: 100%
+Click ``Try Pixel Densities`` (``Pixel Density`` panel), or the eye beside ``Quick Unwrap Model`` (``UV`` panel) to start on new UVs:
 
-1. If more than one zone was detect in Density Zones, you are going to have to keep the zones, in order to keep the different pixel sizes. Pixel Art Studio is going to automatically resize and re-point Blender's grid as you hover the mesh's faces with the plugin tools, to keep one grid square at the size of one pixel for that specific face (you don't have to do anything else about it).
-2. Click ``Setup Viewport``.
-3. Click ``Make Canvas``, now Pixel Art Studio is going to work with your existing texture, with all the different pixel sizes of your mesh and you are ready to paint.
-4. See :doc:`density-zones` to learn how to manage and create Density Zones.
+* It opens on the density the model already has (``Current Density``). Try others on the model, and ``Current Texture`` shows your own texture at the new pixel size.
+* Tick ``Quick Unwrap`` for new UVs (at any density, the model's own included).
+* ``Apply New Density``: ``Keep my painting`` (scaled to the new pixel size, or carried onto the new UVs) or ``Start with a blank texture``. One :kbd:`Ctrl+Z` takes it back.
 
-********************************************
-Drawing and Painting with Pixel Art Studio
-********************************************
+See :ref:`quick-setup-try`.
 
-1. You can use Pixel Art Studio tools in the ``3D Viewport`` (in Object and Edit modes) and in the ``Image Editor`` (2D Viewport). Reveal the sidebar with :kbd:`N` and click ``Pixel Art Studio``.
+**Detect Texel Density**
 
-    - If you want a 2D and a 3D view side by side, use the Pixel Art Studio workspace.
+Click ``Detect Texel Density`` (``Pixel Density`` panel): the pixel size the model already uses becomes the scene's, so models and UVs you make next (``Pixel Art Unwrap``, ``Quick Unwrap Model``, ``Apply Texel Density``, ``Add 1m Cube``, ``Quick Setup``) **match the pixels you already have**. See :ref:`detect-texel-density`.
 
-2. Click any of the tools in the sidebar to activate the Pixel Art Studio canvas or press :kbd:`;` (semicolon, the ``Activator Shortcut``), and from now on, shortcuts start working and you can draw and paint.
+**Detect Density Zones**
 
-Check the :doc:`shortcuts` page for the full list of shortcuts and also how to customize them.
+Only for a model drawn at several pixel sizes (a detailed head and chunky legs, for example).
 
-.. image:: _static/images/activator-shorcut-on-off.gif
+1. Expand ``Density Zones`` and click ``Detect Density Zones``. The model is measured island by island and grouped in zones, one per pixel size.
 
-.. tip::
-    **To get Blender's shortcuts back, you have to manually deactivate the tool.** **Press** :kbd:`;` (semicolon, the ``Activator Shortcut``) anytime again to deactivate the tool and get Blender's shortcuts back or **click the armed tool's button** again to de-activate it. While a tool is armed it owns the shortcuts (custom Pixel Art Studio shortcuts), so for example, Blender's :kbd:`G` and :kbd:`B` does not work.
+   - Just one zone found? Then it has one pixel size after all: click the trash button (``Clear Zones``) and use ``Detect Texel Density`` instead.
 
-    You can press :kbd:`;` **back and forth to toggle between Pixel Art Studio and Blender's shortcuts** (it always re-activates the tool you were using last), so the workflow can be pretty dynamic without needing to click buttons in the sidebar.
+2. Click ``Average`` (under the zone list): the viewport is set up, with the grid on the model's average pixel size.
 
 .. note::
-    If you activate Pixel Art Studio in the Image Editor, it's going to work ONLY in the Image Editor. To also use it in the 3D viewport, you have to also activate the desired tool in the 3D viewport.
+    Once a model has zones, **Blender's grid follows the pixel size of the face under the brush** while you paint in the 3D Viewport (``Grid Follows the Face``). Want to keep your own grid? Skip the zones, or untick ``Grid Follows the Face`` (or the preference ``Automatically configure grid and grid units``). See :doc:`density-zones`.
 
+**Setup Viewport**
 
-3. The drawing and painting tools work just like most pixel art and painting software, with the difference that they are pixel aware and pixel perfect.
+Puts Blender on the pixel grid, for modelling and unwrapping. **It changes the scene**:
 
+* the unit system goes to ``None``;
+* the ``View Transform`` goes to ``Standard`` (renders change too);
+* snapping goes on, to ``Increment``;
+* EEVEE's viewport ``Samples`` go to 1;
+* every 3D Viewport gets the pixel grid and ``Flat`` ``Texture`` shading;
+* every Image Editor gets ``Round to Pixels: Corner``.
+
+The loop icon beside it, ``Restore Viewport``, puts all of that back. See :ref:`setup-viewport`.
+
+See :doc:`tutorial-existing-model` for the whole flow, painting included.
+
+********************************************
+Drawing and painting with Pixel Art Studio
+********************************************
+
+.. image:: _static/images/v2/quickstart-arm-and-paint.gif
+
+1. You can use Pixel Art Studio tools in the ``3D Viewport`` (in Object and Edit Mode) and in the ``Image Editor``. Reveal the sidebar with :kbd:`N` and click ``Pixel Art Studio``.
+
+   - If you want a 2D and a 3D view side by side, use the Pixel Art Studio workspace.
+
+2. Click any of the tools in the ``Pixel Art Studio`` panel, or point at the viewport and press :kbd:`;` (semicolon, the activator shortcut, it arms the last tool you used, the Brush the first time).
+3. Paint with the left mouse button. :kbd:`Alt+[` :kbd:`Alt+]` change the brush size, :kbd:`Alt+X` swaps the two colors and :kbd:`Alt+click` samples a color (in ``Pixel Art Studio Only``: :kbd:`[` :kbd:`]` and :kbd:`X`).
+4. Press :kbd:`Esc` (or :kbd:`;`, or click the armed tool again) to put the tool away. Closing the sidebar or picking another of its tabs puts it away too.
+
+.. tip::
+    Press :kbd:`;` **back and forth to toggle between Pixel Art Studio and Blender**, so the workflow can be pretty dynamic without clicking buttons in the sidebar.
+
+.. tip::
+    Press :kbd:`D` over the viewport for the tools popup: tools, sizes, colors and patterns right at the mouse position, even with no tool active.
+
+.. tip::
+    A model made of several objects sharing one texture (a rig, a vehicle in parts)? Every part takes the brush where you point at it, whichever object is selected. See :ref:`several-parts`.
+
+See :doc:`interface` for how arming works in both editors, :doc:`painting-tools` for every tool and :doc:`shortcuts` for the full list of shortcuts (and how to change them).
 
 Selections
 ================================
 
-- There are multiple pixel aware selection tools and you can make selections in both the 2D and 3D viewports.
-- Like drawing tools, selections also work like most pixel art and painting software, they work to mask the work area, so the other tools affect only the selected areas.
-- If you have a selection you can add to the selection by holding down :kbd:`Shift` and selecting more, you can even use different selection tools to keep adding their selections.
-- Hold :kbd:`Alt` to remove from selection.
-- Hold :kbd:`Ctrl` to duplicate what is being dragged with the selection.
+- There are pixel aware selection tools (``Marquee`` :kbd:`Shift+Alt+M`, ``Ellipse Select``, ``Lasso`` :kbd:`Shift+Alt+K` and ``Magic Wand`` :kbd:`Shift+Alt+W`), in the 2D and 3D viewports.
+- A selection masks the work area, so the other tools affect only the selected pixels.
+- Hold :kbd:`Shift` to add to the selection and :kbd:`Alt` to remove from it.
+- Drag inside a selection to move its pixels (:kbd:`Ctrl` duplicates them), even across the faces of the model.
+- Copy, cut and paste (:kbd:`Ctrl+Shift+C`, :kbd:`Ctrl+Shift+X`, :kbd:`Ctrl+Shift+V`) to move pixels between layers.
 
-.. note::
-    A selection affects just the currently active layer.
+See :doc:`selection-and-transform`.
 
-.. tip::
-    You can copy, cut and paste what is selected between layers, this is how you can move content between layers.
-
-    .. image:: _static/images/copy-paste-layers.gif
-
-Layers and groups
+Layers
 ================================
 
-.. video:: _static/videos/quickstart/layers-basic.mp4
-  :width: 100%
+- Everything you draw, paint and select happens on the active layer of the ``Layers`` panel.
+- ``+`` adds a layer above the active one, and each layer has its own visibility, lock, opacity and blend mode.
+- Groups, clipping, masks and adjustments: see :doc:`layers`.
 
-Everything in Pixel Art Studio happens inside layers. What you draw, paint and select happens inside layers. Layers can have individual opacity and visibility, and everything inside a group is affected by the group opacity and visibility.
+Saving
+================================
 
-.. image:: _static/images/layers.png
-
-1. New layer
-2. Remove layer
-3. Duplicate layer
-4. Move layer (or group) up and down
-5. Merge layer (or group) with the layer below
-6. Merge selected layers (or groups). To select, you must check the checkbox next to the layer name (as shown in item 11).
-7. New group with the selected layers.
-8. Ungroup current active group.
-9. Toggle layer visibility.
-10. Toggle layer lock. A locked layer cannot be edited.
-11. Select layer or group.
-12. Double click name to rename layer or group.
-13. Layer or group opacity. Everything inside a group is affected by the group opacity.
-14. Add pixel grid layer with a generated checker or color grid texture.
-
-
-***************************************************
-Extra Tips
-***************************************************
-
-.. tip::
-    When a Pixel Art Studio tool is armed and shortcuts are active, you can press :kbd:`F` in the viewports to show the floating tools popover, it appears at mouse position, making it easy and fast to reach tools and colors.
-
-    .. image:: _static/images/floating-tools.png
-
-.. tip::
-    When a Pixel Art Studio tool is armed and shortcuts are active, you can press :kbd:`ESC` to deactivate the tool and get Blender's shortcuts back.
-
-.. tip::
-    If you are in the 3D viewport and want to reveal the current mesh's texture in the Image Editor, click ``Reveal Texture``. Likewise, if you are in the Image Editor and want to reveal the current mesh in the 3D viewport, click ``Show in 3D Viewport``.
-
-    .. image:: _static/images/reveal-texture.png
+- Press :kbd:`Ctrl+S`: the texture and its layers are saved inside the ``.blend`` file.
+- A texture made by ``Create Texture`` or ``Setup Pixel Art Canvas`` has no file on disk until you save it from the Image Editor (``Image > Save As``) or with ``Export PNG`` > ``Export Texture`` (``Layer Extras``).
+- A texture that came with the model (a file on disk) is written back to that file, in its own format, when you save the ``.blend`` after painting.
+- Making a game? See :doc:`game-engines`: Godot, Unity and Unreal Engine get the model on every save.

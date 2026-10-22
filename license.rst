@@ -22,7 +22,7 @@ Copyright (c) 2026-present Pardall Tecnologia LTDA, https://tools.pardall.com.br
 Documentation License
 ----------------------
 
-This documentation website and its contents are licensed under the MIT License - Copyright (c) 2026-present Alfred Reinold Baudisch.
+This documentation website and its contents are licensed under the MIT License, Copyright (c) 2026-present Alfred Reinold Baudisch.
 
 
 Third Party Licenses
@@ -60,30 +60,22 @@ INTERFACE ICONS: @icons
 Aseprite.ttf
 ^^^^^^^^^^^^^
 
-"Aseprite" pixel face by David Capello (https://www.aseprite.org/)
-(TrueType conversion of aseprite_font.png).
+"Aseprite" pixel face by David Capello (https://www.aseprite.org/) (TrueType conversion of aseprite_font.png).
 
 Copyright (C) 2001-2023 David Capello
 
-Licensed under the Creative Commons Attribution 4.0 International licence
-(CC BY 4.0): http://creativecommons.org/licenses/by/4.0/
+Licensed under the Creative Commons Attribution 4.0 International licence (CC BY 4.0): http://creativecommons.org/licenses/by/4.0/
 
 Px437_IBM_VGA_8x16.ttf
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-"Px437 IBM VGA 8x16" from The Ultimate Oldschool PC Font Resource by
-VileR (https://int10h.org/oldschool-pc-fonts/)
+"Px437 IBM VGA 8x16" from The Ultimate Oldschool PC Font Resource by VileR (https://int10h.org/oldschool-pc-fonts/)
 
-Licensed under the Creative Commons Attribution-ShareAlike 4.0
-International licence (CC BY-SA 4.0):
-https://creativecommons.org/licenses/by-sa/4.0/
+Licensed under the Creative Commons Attribution-ShareAlike 4.0 International licence (CC BY-SA 4.0): https://creativecommons.org/licenses/by-sa/4.0/
 
 Kenney Pixel Fonts
 ^^^^^^^^^^^^^^^^^^
 
-Kenney Mini, Kenney Mini Square, Kenney Mini Square Mono, Kenney Pixel,
-Kenney Pixel Square, Kenney High and Kenney High Square
-https://kenney.nl/assets/kenney-fonts
+Kenney Mini, Kenney Mini Square, Kenney Mini Square Mono, Kenney Pixel, Kenney Pixel Square, Kenney High and Kenney High Square: https://kenney.nl/assets/kenney-fonts
 
-Licensed under Creative Commons CC0:
-https://creativecommons.org/publicdomain/zero/1.0/
+Licensed under Creative Commons CC0: https://creativecommons.org/publicdomain/zero/1.0/

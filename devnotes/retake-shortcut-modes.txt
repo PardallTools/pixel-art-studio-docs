@@ -1,0 +1,36 @@
+Media to retake or add after the add-on's shortcut modes, the "just Make Canvas" docs pass, Texture Dilation, the Export PNG question and the clear selection preference (add-on commits bfa60315, d7443d9c, 40be3a21, dac13b38).
+Format: path | what changed | what it must show now. Same models rule as shots.txt.
+The docs' showcase shots run on Pixel Art Studio Only unless --set shortcuts=blender: a shot that shows key presses for the default set needs that flag.
+
+== Retake ==
+_static/images/v2/shortcuts-preferences-tab.png | The Shortcuts tab has a Shortcut Mode box at the top now | Preferences > Shortcuts tab on Alongside Blender: the Shortcut Mode box (the two modes, its lines, Show the Shortcut Question Again), the activator box, then the Tools rows with Shift+Alt+B and so on. Also on: shortcuts.rst.
+_static/images/v2/shortcuts-rebind-row.png | The rows are the Alongside Blender set by default, and a row can show a red clash line | The Tools box on Alongside Blender with the Brush row rebound (back arrow at the end of the row); bonus, a second row bound to a key Blender uses, with its red "Blender: ..." line under it. Put the defaults back after the shot.
+_static/images/v2/preferences-general-tab.png | The Selection box has a new checkbox | General tab with "Clear selection when Pixel Art Studio is de-activated" (on) in the Selection box.
+_static/images/v2/layers-adjustments.png | Layer Extras has a Texture Dilation button under Import PNG / Export PNG | Same shot, with the new button in the panel.
+_static/images/v2/quickstart-arm-and-paint.gif | Its key overlay shows [ and ], which are Alt+[ and Alt+] in the default mode | Same flow on Alongside Blender (--set shortcuts=blender): Alt+[ / Alt+] for the size, Esc, then G is Blender's Grab.
+_static/videos/v2/painting-tools-ctrl-shift-lines.mp4 | Switches to the Eraser with E | Same flow on Alongside Blender, the Eraser by Shift+Alt+E (or its button).
+_static/videos/v2/selection-transform.mp4 | Opens the box with Ctrl+T | Same flow on Alongside Blender, Shift+Alt+T (or the Transform button).
+_static/videos/v2/pixel-art-studio-features.mp4 | Check every caption and keycap for a classic key (Ctrl+T, B, G, F) | Captions with the Alongside Blender keys, or no keys. Also on: features.rst, index.rst.
+_static/images/v2/interface-floating-panel.png | The panel is the same, but shots.txt calls it the F floating panel | Optional: the tools popup opened by D with no tool armed. Update its shots.txt line either way. Also on: shortcuts.rst.
+
+== New, nothing on the page yet ==
+_static/images/v2/shortcuts-mode-question.png | for shortcuts.rst, Shortcut Mode | The Pixel Art Studio Shortcuts question as it opens the first time a tool is armed (PAS_SHORTCUT_SETUP=1 on a factory run), both choices with their lines.
+_static/images/v2/layers-export-question.png | for layers.rst, Layer Extras | The menu Export PNG opens: Export Layer (or Export Group) and Export Texture.
+_static/images/v2/layers-texture-dilation.png | for layers.rst, Texture Dilation | The Texture Dilation dialog (Crop, Radius, Preview) over the crate's canvas in the Image Editor with the preview on, the islands' colors grown into the empty texture around them.
+_static/images/v2/layers-texture-dilation-question.png | for layers.rst, Texture Dilation | Optional: the Apply to Selected Layer / Apply to the Whole Texture menu.
+
+== Retake: Make Canvas is all an existing textured model needs, Setup Viewport is never red ==
+_static/images/v2/quickstart-textured-model.png | Shows Setup Viewport (needed) in red and numbers it as step 2, with Detect Density Zones as "before 1" | A textured model that is not a canvas yet: Make Canvas visible at the top of the Pixel Art Studio panel and in Setup, numbered 1 Make Canvas, 2 paint. No Density Zones, no numbered Setup Viewport.
+_static/videos/v2/quickstart-textured-model.mp4 | Clicks Setup Viewport (needed) after Make Canvas, and starts the zones part with Detect Density Zones as a step | Make Canvas, then paint right away. If the zones part stays, cut it as the optional unwrap part.
+_static/images/v2/quickstart-untextured-model.png | Setup Viewport (needed) in red | The same panel, Setup Viewport plain.
+_static/videos/v2/quickstart-new-project.mp4 | Clicks Setup Viewport (needed), red | The same flow, the button plain.
+_static/videos/v2/apply-texel-density.mp4 | Setup Viewport (needed) turns red with Apply Texel Density (needed) | Only Apply Texel Density (needed) turns red.
+_static/images/v2/trouble-no-canvas-warning.png | Old message, and Setup Pixel Art Canvas coral | The coral "No Pixel Art Studio canvas here. Click Make Canvas to paint on this texture" with its X and Make Canvas drawn coral, on a textured mesh that is not a canvas yet (one Brush click on it).
+_static/videos/v2/quickstart-no-uvs-no-texture.mp4 and quickstart-uvs-no-texture.mp4 | Check: a red Setup Viewport (needed) on screen | Retake if it shows.
+_static/images/v2/setup-viewport-needed.png | No page uses it any more (the "Why is Setup Viewport red?" sections are gone) | Delete it and its shots.txt line.
+
+== Done in the 1.4 pass (2026-10-22): no Make Canvas, Quick Setup, Try Pixel Densities ==
+Done: quickstart-textured-model.png (the Kombi painted, 1 Brush, 2 strokes), quickstart-untextured-model.png (the big Setup button), interface-floating-panel.png (D with no tool armed), shortcuts-mode-question.png, layers-export-question.png, layers-texture-dilation.png, layers-texture-dilation-question.png, trouble-no-canvas-warning.png (the 1.4 text), paint-on-texture-dropdown.png (no red Setup Viewport), setup-panel.png (Paint On row, Remove Unused Textures), the crate tutorial's setup stills (Quick Setup), tutorial-existing-add-layer.png (replaces tutorial-existing-make-canvas.png), uv-panel.png (the lists last, the eye, the trash).
+Deleted, no page uses them: make-canvas.png, setup-viewport-needed.png, quickstart-setup-canvas-dialog.png, tutorial-crate-setup-viewport.png, tutorial-crate-setup-canvas.png, tutorial-existing-make-canvas.png, quickstart-new-project.mp4, quickstart-no-uvs-no-texture.mp4, quickstart-uvs-no-texture.mp4, quickstart-textured-model.mp4. New: quickstart-quick-setup.mp4.
+Still to retake: quickstart-arm-and-paint.gif and interface-activator.gif ([ and ] are Alt+[ and Alt+] in the default mode), painting-tools-ctrl-shift-lines.mp4 (E), selection-transform.mp4 (Ctrl+T), pixel-art-studio-features.mp4 (classic keys in captions, the old setup), apply-texel-density.mp4 (shows Setup Viewport (needed) in red), shortcuts-preferences-tab.png, shortcuts-rebind-row.png, preferences-general-tab.png, layers-adjustments.png (check each against the 1.4 UI).
+
