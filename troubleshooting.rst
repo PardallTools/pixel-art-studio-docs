@@ -68,3 +68,15 @@ When I draw and paint with the brush, the strokes appear in multiple places
 .. image:: _static/images/troubleoverlappinguvs.gif
 
 This is because of overlapping UVs.
+
+When I save my .blend file inside a Godot project and use the Godot integration, I get "not a blend file"
+----------------------------------------------------------------------------------------------------------
+
+Make sure your Godot Editor is configured a Blender version that is higher or compatible with the Blender version you are using to save the .blend file.
+
+Go to  :menuselection:`Edit --> Editor Settings --> FileSystem --> Import --> Blender`, and in ``Blender Path`` select the correct Blender executable path.
+
+When I export a file to a game engine such as Godot and Unity, the model is darker in the engine
+------------------------------------------------------------------------------------------------
+
+If the model is darker or looks like it's in shadow, make sure the model's material in Blender has ``Metallic`` set to 0 and ``Roughness`` set to 1.
