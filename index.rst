@@ -48,7 +48,6 @@ Summary of features:
    - ``Stack UVs``: paint one face and see it on all of them (barrel staves, cylinder sides, crate planks).
    - ``Keep UVs Together (Join)``: curved parts stay one clean island.
    - Several meshes on the same texture are unwrapped together, in one packed layout with no overlaps.
-   - Every face gets its own island unless you stack or join faces, so for organic models you may still want to unwrap the UVs by hand (Pixel Art Studio's density tools work on top of your own layout).
 
 - **Density Zones** (*optional*): assign and manage texel density values per face, allowing for **uniform pixel size across the whole mesh or different pixel sizes per face**.
 

@@ -141,9 +141,6 @@ Every drawing, selection and layer tool works in the **3D Viewport and in the Im
   * Flip UV islands, snap UVs to pixels, keep pinned UVs, and margins measured in pixels.
   * Lists of the stacked and joined groups, with a trash button to remove them all at once.
 
-  .. note::
-      Every face gets its own island unless you stack or join faces. For organic models you may still want to unwrap the UVs by hand, and then use Pixel Art Studio's density tools on top of your own layout.
-
 * **Density Zones** (*optional, advanced*, multiple pixel sizes per model):
 
   * Assign and manage **texel density values per face**, for **uniform pixel size across the whole mesh or different pixel sizes per face** (a character's head drawn at twice the density of the legs, for example, which means smaller and more pixels for the head).
