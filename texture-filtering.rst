@@ -20,6 +20,8 @@ The ``Filtering`` row under ``Paint On``, in ``Setup`` (3D Viewport and Image Ed
 * ``Linear``: texels blended into each other. **Nothing else to set up**, in Blender or in the game engines.
 * ``N64 (3 Point)`` (*optional*): the N64's own filter, three texels blended a sample, through a node group in the material. In Blender only: the exports carry it as ``Linear`` (see :ref:`filtering-exports`).
 
+.. image:: _static/images/v2/texture-filtering-row.png
+
 How it works:
 
 * **Every material that samples the texture follows**, in this .blend (a material linked from another .blend is that file's).
@@ -45,6 +47,10 @@ Why did ``Linear`` show the seams? ``Quick Unwrap Model`` gives every face an is
 * **The Layers panel says so** while it's on: ``Seam padding fills the margin`` / ``while the texture is filtered``.
 * **It follows the UVs**: after an unwrap or UVs moved by hand it's laid again (on a big texture it takes a moment, the seams show until it's there). UVs edited in Edit Mode get it when you leave Edit Mode.
 
+.. image:: _static/images/v2/seam-padding-image-editor.png
+
+Above: the crate after ``Lay Out Again``, on ``Linear``. Every island is ringed with the colors from across its seams, and ``Layers`` ends with the note.
+
 .. note::
     Painted in the margin while the texture is filtered? Your layers keep it, but the texture shows the padding there. Back on ``Closest``, your painting shows again.
 
@@ -65,6 +71,9 @@ The margin for a filtered texture
 * **At least 2 texels between the islands** for a filtered texture: each island needs a ring of its own. ``1`` (the default) is plenty for ``Closest``.
 * **Picking** ``Linear`` **or** ``N64 (3 Point)`` **raises** ``Margin (px)`` **to** ``4``, so the seams stay hidden from far away too (a filtered texture is mipmapped, in Blender and in the game engines). It never lowers it, and you can still type your own.
 * **Under 2, the unwrap lays out at 2 anyway** while the texture is filtered, and ``Unwrap Options`` says so under ``Margin (px)``: ``Laid out at 2 while the texture is filtered``. The report too (``Cube: 16 px/m on the 64x64 texture T_Cube (margin 2 for Linear filtering)``).
+
+  .. image:: _static/images/v2/unwrap-options-filtered-margin.png
+
 * **A bigger margin takes texture space**: a model that just fit may need the next texture size (``Grow Texture to Fit``, see :ref:`grow-texture-to-fit`).
 
 .. _lay-out-again:
@@ -79,7 +88,12 @@ The new margin is for the next unwrap. UVs laid out before (at ``1``, or your ow
   * ``Lay Out Again``: new UVs at the margin (``Quick Unwrap Model``'s layout, at the model's own pixel size), and **every layer is carried onto them**. One undo step.
   * ``Not Now`` (or :kbd:`Esc`): the texture stays filtered and the UVs stay as they are.
 
+  .. image:: _static/images/v2/texture-filtering-question.png
+
 * **The note in** ``Setup``, under the ``Filtering`` row, for as long as the texture is filtered and the islands are too close: ``UV islands 1 texel apart:`` / ``seams show while filtered`` (``UV islands touch:`` when there's no margin at all), with ``Lay Out Again`` under it, the same as the question's.
+
+  .. image:: _static/images/v2/texture-filtering-setup-note.png
+
 * **Object Mode only**: from Edit Mode it says ``Leave Edit Mode first: the UVs are laid out again in Object Mode``.
 * **A texture with nothing painted yet** asks nothing: click ``Quick Unwrap Model`` and it's laid out at the new margin.
 
