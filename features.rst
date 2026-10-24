@@ -141,6 +141,13 @@ Every drawing, selection and layer tool works in the **3D Viewport and in the Im
   * Flip UV islands, snap UVs to pixels, keep pinned UVs, and margins measured in pixels.
   * Lists of the stacked and joined groups, with a trash button to remove them all at once.
 
+* **Texture Filtering**
+
+  * ``Closest`` (the pixel art look), ``Linear`` or ``N64 (3 Point)``, one dropdown under ``Paint On``.
+  * **Seam Padding**: the margin between the UV islands is filled with what the model shows across the seam, so a filtered texture **doesn't show a step at every UV seam**, automatically.
+  * The UV margin follows the filtering, and a painted model laid out too tight gets ``Lay Out Again`` (**the painting is kept**).
+  * **The game engines get it too**: ``Linear`` with mipmaps in glTF, Godot, Unity and Unreal Engine.
+
 * **Density Zones** (*optional, advanced*, multiple pixel sizes per model):
 
   * Assign and manage **texel density values per face**, for **uniform pixel size across the whole mesh or different pixel sizes per face** (a character's head drawn at twice the density of the legs, for example, which means smaller and more pixels for the head).
@@ -158,7 +165,7 @@ Every drawing, selection and layer tool works in the **3D Viewport and in the Im
 * **Game engines**
 
   * **Paint in Blender, press** :kbd:`Ctrl+S` **and see it in Godot, Unity or Unreal Engine**: no export dialogs, no manual reimport.
-  * **Pixel art arrives as pixel art**: unlit, nearest filtered, no mipmap blur, hard edged transparency, in every engine. It fixes the classic "black or blurry model" import problem.
+  * **Pixel art arrives as pixel art**: unlit, nearest filtered, no mipmap blur, hard edged transparency, in every engine. It fixes the classic "black or blurry model" import problem. A texture you set to ``Linear`` arrives ``Linear``, with mipmaps.
   * ``Fix Models in Project``: fixes the models that were already in the project before the integration.
   * **Generic Exporter**: GLB, glTF or FBX into any folder on every save, for any other engine or tool.
   * Any **glTF export you make yourself** comes out as unlit pixel art too.

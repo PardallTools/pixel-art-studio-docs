@@ -51,9 +51,14 @@ Yes. ``Try Pixel Densities`` (``Pixel Density`` panel) shows other pixel sizes o
 My model has a custom shader and custom material, can I use Pixel Art Studio to paint it?
 -----------------------------------------------------------------------------------------
 
-Yes. The first stroke turns the color texture your material already uses into a canvas and **leaves your shader as it is**: only that texture's ``Image Texture`` nodes are set to ``Closest``, so the pixels stay crisp, and normal maps and roughness maps are left alone. A mesh with several color textures can paint each of them (``Paint On``). See :ref:`automatic-canvas`.
+Yes. The first stroke turns the color texture your material already uses into a canvas and **leaves your shader as it is**: only that texture's ``Image Texture`` nodes are set to ``Closest``, so the pixels stay crisp (unless you picked ``Linear`` for it, see :doc:`texture-filtering`), and normal maps and roughness maps are left alone. A mesh with several color textures can paint each of them (``Paint On``). See :ref:`automatic-canvas`.
 
 When you export to glTF, your material keeps its shader and its lighting too, and only gets the crisp pixels and the hard edged transparency (see :doc:`game-engines`).
+
+Can the texture be smooth (Linear) instead of crisp?
+----------------------------------------------------
+
+Yes. ``Filtering``, under ``Paint On`` in ``Setup``: ``Closest`` (the pixel art look), ``Linear`` or ``N64 (3 Point)``. **Seam Padding** keeps the UV seams from showing a step at every face, and the game engines get the texture ``Linear`` with mipmaps. See :doc:`texture-filtering`.
 
 Is there undo and redo support?
 -------------------------------

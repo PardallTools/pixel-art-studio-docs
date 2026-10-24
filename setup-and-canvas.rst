@@ -15,6 +15,7 @@ Top to bottom:
 * **Pixel density preset**: the dropdown, with a pencil (rename) and an X (remove) for the presets of your own.
 * ``Setup Viewport``, plus a loop arrow (``Restore Viewport``) once the viewport is set up.
 * ``Paint On``: the texture the selected model paints on, a canvas already or not yet, with its size (a dropdown when the model has several color textures), and an arrow button that shows it in the other editor.
+* ``Filtering``: ``Closest`` (default), ``Linear`` or ``N64 (3 Point)`` for that texture (see :doc:`texture-filtering`). While the texture is filtered and its UV islands sit too close, a note and ``Lay Out Again`` show under it.
 * ``Setup Pixel Art Canvas``.
 * ``Remove Unused Textures`` (see :ref:`remove-unused-textures`).
 * ``Snap Selection to Pixel Grid`` (see :doc:`pixel-density`).
@@ -204,7 +205,7 @@ What never makes it (your texture stays untouched, and its file byte for byte):
 Which texture:
 
 * **The color texture**: the image on the material's color path (``Base Color`` or ``Emission``, through node groups and ``Mix`` nodes), a canvas first when there is one there.
-* **Normal maps, roughness maps and other data textures are never made canvases**, and only the color texture's ``Image Texture`` nodes are set to ``Closest``, in every material that samples it.
+* **Normal maps, roughness maps and other data textures are never made canvases**, and only the color texture's ``Image Texture`` nodes are set to ``Closest``, in every material that samples it (unless you picked another ``Filtering`` for it, see :doc:`texture-filtering`).
 * **Your pixel density stays as it is**: the preset in ``Setup`` doesn't change.
 
 A texture that can't be painted says why, in ``Layers`` and in the status bar when you click (nothing is changed):

@@ -24,7 +24,7 @@ Let's take a model that already has UVs and a texture (made by you, or by somebo
 
 .. image:: _static/images/v2/tutorial-existing-add-layer.png
 
-Your material, your UVs and the texture size are kept as they are. Only the texture's interpolation is set to ``Closest``, so the pixels stay crisp. If the material has other textures (a normal map, a roughness map), they are left alone: Pixel Art Studio paints the color texture.
+Your material, your UVs and the texture size are kept as they are. Only the texture's interpolation is set to ``Closest``, so the pixels stay crisp (want it smooth? see :doc:`texture-filtering`). If the material has other textures (a normal map, a roughness map), they are left alone: Pixel Art Studio paints the color texture.
 
 That's all the setup painting needs: no pixel density, no ``Setup Viewport``, no density zones. :kbd:`Ctrl+Z` takes the new layer back, and a second :kbd:`Ctrl+Z` gives you the texture back exactly as it was.
 
