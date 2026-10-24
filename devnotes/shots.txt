@@ -115,7 +115,7 @@ _static/images/v2/texture-filtering-row.png | Setup panel crop in the 3D Viewpor
 _static/images/v2/texture-filtering-question.png | The question Linear asks on the painted crate laid out at Margin (px) 1: "The UV islands are 1 texel apart: seams show under Linear filtering" / "Lay the UVs out again 4 texels apart? Your painting is kept", Lay Out Again and Not Now. The popup over the 3D Viewport, the crate behind it.
 _static/images/v2/texture-filtering-setup-note.png | The same crate after Not Now: Setup panel crop with the Filtering row on Linear, "UV islands 1 texel apart:" / "seams show while filtered" and Lay Out Again under it.
 _static/images/v2/seam-padding-image-editor.png | Image Editor on the crate's canvas after Lay Out Again, the texture on Linear: the islands 4 texels apart with the padding around each, Layers panel open showing "Seam padding fills the margin" / "while the texture is filtered" at its bottom. The padding wraps round the canvas edges too.
-_static/images/v2/unwrap-options-filtered-margin.png | UV panel, Unwrap Options open on the crate with the texture on Linear and Margin (px) typed down to 1: "Laid out at 2 while the texture is filtered" under it (cut short at the default sidebar width). Also on: uv-tools.rst.
+_static/images/v2/unwrap-options-filtered-margin.png | UV panel, Unwrap Options open on the crate with the texture on Linear and Margin (px) typed down to 1: "Filtered: laid out at 2" under it. Also on: uv-tools.rst.
 (all from `shots/filtering_stills.py`)
 
 == density-zones.rst ==

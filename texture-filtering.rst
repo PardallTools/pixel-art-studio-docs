@@ -70,7 +70,7 @@ The margin for a filtered texture
 
 * **At least 2 texels between the islands** for a filtered texture: each island needs a ring of its own. ``1`` (the default) is plenty for ``Closest``.
 * **Picking** ``Linear`` **or** ``N64 (3 Point)`` **raises** ``Margin (px)`` **to** ``4``, so the seams stay hidden from far away too (a filtered texture is mipmapped, in Blender and in the game engines). It never lowers it, and you can still type your own.
-* **Under 2, the unwrap lays out at 2 anyway** while the texture is filtered, and ``Unwrap Options`` says so under ``Margin (px)``: ``Laid out at 2 while the texture is filtered``. The report too (``Cube: 16 px/m on the 64x64 texture T_Cube (margin 2 for Linear filtering)``).
+* **Under 2, the unwrap lays out at 2 anyway** while the texture is filtered, and ``Unwrap Options`` says so under ``Margin (px)``: ``Filtered: laid out at 2``. The report too (``Cube: 16 px/m on the 64x64 texture T_Cube (margin 2 for Linear filtering)``).
 
   .. image:: _static/images/v2/unwrap-options-filtered-margin.png
 

@@ -173,7 +173,7 @@ Unwrap Options
 
 What ``Pixel Art Unwrap`` and ``Quick Unwrap Model`` do (also followed by ``Apply Texel Density``, ``Add 1m Cube`` and the canvas wizard). Saved with the .blend.
 
-* ``Margin (px)`` (``1``): texels between islands, whatever the texture size. **A filtered texture needs at least 2**: picking ``Linear`` or ``N64 (3 Point)`` raises it to ``4``, and under 2 it says ``Laid out at 2 while the texture is filtered`` (see :ref:`filtered-margin`).
+* ``Margin (px)`` (``1``): texels between islands, whatever the texture size. **A filtered texture needs at least 2**: picking ``Linear`` or ``N64 (3 Point)`` raises it to ``4``, and under 2 it says ``Filtered: laid out at 2`` (see :ref:`filtered-margin`).
 
   .. image:: _static/images/v2/unwrap-options-filtered-margin.png
 
