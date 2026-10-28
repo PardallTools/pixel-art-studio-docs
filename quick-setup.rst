@@ -179,6 +179,8 @@ The same question from Apply Texel Density and Setup Viewport
 
 ``Apply Texel Density`` and ``Setup Viewport`` never rescale a painted texture without asking: when the scene's density would move the faces of a painted texture, they ask the same ``Keep my painting`` / ``Start with a blank texture`` question (one undo step for the answer). Other meshes are laid out as usual, and the report says which texture was left alone.
 
+A new object added to a painted texture that other objects share isn't asked about when those objects are already at the density and the new one covers no painting only it shows: nothing of the painting moves, so the new object is laid out on its own, around the others.
+
 .. _remove-unused-textures:
 
 Remove Unused Textures
