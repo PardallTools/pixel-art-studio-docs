@@ -53,12 +53,14 @@ Scales the UVs of the selected models to the density and snaps them onto the tex
 
 * **Whole models**: every face of every selected mesh, in Object Mode or Edit Mode (the face selection doesn't matter).
 * **Islands that grow into each other** (closer than the margin) or past the texture edge: then every island is packed again, and with ``Grow Texture to Fit`` on the canvas grows to hold them.
+* **Other objects on the same texture that you didn't select** stay as they are: the selected models are packed around them, and their islands that kept their size stay where they are. The canvas doesn't grow then, since that would change the pixel size of the others: the report says ``does not fit beside the other objects`` and nothing changes, and what to do: on a texture with nothing painted yet, select every object on it to lay them out together (and grow it); on a painted one, make room for it on the texture (move islands by hand, or shrink the new object's).
 * **Islands stacked on purpose** (with ``Stack UVs``, or mirrored halves on one spot) move together.
 * **Applying the density a model already has moves nothing.**
 * It follows the ``Unwrap Options`` of the ``UV`` panel: the margin, density zones, pixel aspect, face shapes and pinned UVs (see :doc:`uv-tools`).
 * It always applies the scene's density, whatever the unwrap density dropdown says.
 * Meshes on the same texture are one layout, so packing one can't land it on another.
 * **A texture with painting on it is asked about first**: ``Keep my painting`` (every layer scaled to the new pixel size) or ``Start with a blank texture``. The button itself takes no undo step, the answer takes one (see :ref:`density-question`).
+* **A new object added to a painted texture isn't asked about** when the other objects on it are already at the density: it's laid out on its own, around them, and the painting and the other objects stay as they are. Painting that only the selected models show is still asked about.
 
 .. video:: _static/videos/v2/apply-texel-density.mp4
   :width: 100%
@@ -162,7 +164,7 @@ How to
 
 1. Pick another preset, or type a ``Texel Density``. ``Apply Texel Density (needed)`` turns red.
 2. Select the models and click ``Apply Texel Density`` (or ``Setup Viewport``, which also puts the grid on the new density).
-3. The report says ``does not fit``? Turn on ``Grow Texture to Fit`` and apply again, or pick a lower density.
+3. The report says ``does not fit``? Turn on ``Grow Texture to Fit`` and apply again, or pick a lower density. It says ``does not fit beside the other objects``? Do what the report says: select every object on that texture and apply again (nothing painted yet), or make room for it on the texture (painted).
 
 **Give two models the same pixel size**
 

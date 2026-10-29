@@ -40,6 +40,8 @@ Under the list, for the active layer or group:
 * **Blend mode** dropdown (``Normal`` by default).
 * ``Opacity``.
 
+While the texture is filtered (``Linear`` or ``N64 (3 Point)``), the panel ends with ``Seam padding fills the margin`` / ``while the texture is filtered`` (see :ref:`seam-padding`).
+
 Layer Operations menu
 ---------------------
 
@@ -168,6 +170,9 @@ Texture Dilation
 ----------------
 
 **Every transparent texel around the art takes the color of the nearest painted texel**, so the edges of the UV islands don't pull the background in when the texture gets filtered or scaled down later (mipmaps in a game engine, for example). The fill is hard edged pixel art, never blended or blurred.
+
+.. note::
+    Does it hide the seams under ``Linear``? No: it grows each island's own colors, and a filtered seam wants the color the model shows across it. That's what Seam Padding fills the margin next to the islands with, automatically, while the texture is filtered (see :ref:`seam-padding`). The dilation still fills what's farther out.
 
 1. Select the layer or the group in the ``Layers`` panel.
 2. Click ``Texture Dilation`` in ``Layer Extras`` and select what it applies to:

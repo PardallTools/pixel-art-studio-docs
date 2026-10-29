@@ -173,7 +173,10 @@ Unwrap Options
 
 What ``Pixel Art Unwrap`` and ``Quick Unwrap Model`` do (also followed by ``Apply Texel Density``, ``Add 1m Cube`` and the canvas wizard). Saved with the .blend.
 
-* ``Margin (px)`` (``1``): texels between islands, whatever the texture size.
+* ``Margin (px)`` (``1``): texels between islands, whatever the texture size. **A filtered texture needs at least 2**: picking ``Linear`` or ``N64 (3 Point)`` raises it to ``4``, and under 2 it says ``Filtered: laid out at 2`` (see :ref:`filtered-margin`).
+
+  .. image:: _static/images/v2/unwrap-options-filtered-margin.png
+
 * ``Avoid Shearing and Diagonal Pixels`` (on): **every face keeps its exact shape and pixel size**, and an edge that isn't on a whole texel shows a partial texel there. Off, every corner goes on a texel corner (no partial texels), but a face that isn't a rectangle is bent a little and its pixel size drifts. Rectangles come out the same either way.
 
   * ``Snap Corners Within`` (off, ``25%``): faces that are already nearly on the pixel grid go onto it, the rest keep their exact shape. The number is how far a corner may move, as a fraction of a pixel (``0`` snaps nothing, ``50`` snaps every face). Only shown while ``Avoid Shearing and Diagonal Pixels`` is on.

@@ -21,7 +21,7 @@ Unlit Pixel Art in glTF
 With ``Unlit Pixel Art in glTF`` on, **every glTF and GLB export from the file comes out as pixel art**, your own ``File > Export > glTF 2.0`` included:
 
 * **Unlit**: the canvas shows the colors exactly as you painted them, with no lighting on top (the standard glTF unlit material, ``KHR_materials_unlit``).
-* **Crisp pixels**: nearest filtering, so no blur up close and no mipmap blur far away.
+* **Crisp pixels**: nearest filtering, so no blur up close and no mipmap blur far away. A texture you set to ``Linear`` (``Texture Filtering``) goes out linear filtered with mipmaps instead (see :ref:`filtering-exports`).
 * **Hard edged transparency**: only when the canvas really has transparent texels (cut at 50% alpha). A fully opaque canvas stays opaque.
 * **Your own materials keep their shader**: a material of yours that samples a canvas (a ``Principled BSDF``, for example) stays lit, and only gets the crisp pixels and the hard edged transparency.
 * Materials that don't use a canvas are not touched.
@@ -78,7 +78,7 @@ Integrate with Godot
 Export a model
 ~~~~~~~~~~~~~~
 
-The model arrives in Godot **nearest filtered, unshaded, with alpha scissor only when the canvas has holes**, and the texture uncompressed with no mipmaps. The settings in the panel:
+The model arrives in Godot **nearest filtered, unshaded, with alpha scissor only when the canvas has holes**, and the texture uncompressed with no mipmaps (linear filtered with mipmaps when the texture is on ``Linear``, see :ref:`filtering-exports`). The settings in the panel:
 
 * The folder and the file name (without the extension, the .blend's name by default).
 * ``File Type``: ``GLB`` (default, one binary file) or ``glTF`` (a text file, easy to read and edit).
@@ -149,7 +149,7 @@ Integrate with Unity
 What you get in Unity
 ~~~~~~~~~~~~~~~~~~~~~
 
-* Canvas textures: **point filter, no mipmaps, uncompressed**.
+* Canvas textures: **point filter, no mipmaps, uncompressed** (trilinear with mipmaps when the texture is on ``Linear``, see :ref:`filtering-exports`).
 * Each canvas slot of the model gets an **unlit material** of its own (in ``Assets/PixelArtStudioBlender/Materials``), with **transparent texels cut out only when the canvas has them**.
 * Your scenes and prefabs keep their references: Unity's IDs for the model and the textures never change across saves.
 * Models and textures that don't come from Pixel Art Studio are left exactly as Unity made them, and so is a material you extracted or remapped to your own.
@@ -179,7 +179,7 @@ The panel, once integrated
 * The project folder, with the Unity version and render pipeline it found (for example ``Unity 2022.3.38f1, URP``).
 * The way Unity reads the model, and that way's settings.
 * ``Export on Save`` (``Update on Save``), ``Re-export`` (``Update Unity Files``) and the last result line.
-* ``Fix Models in Project``: finds the textures Unity is importing wrongly (compressed, blurred or mipmapped) and an importer script that is missing or older, and fixes them on ``OK``. Materials you extracted by hand are listed and left alone.
+* ``Fix Models in Project``: finds the textures Unity is importing wrongly (compressed, blurred or mipmapped, a texture on ``Linear`` kept trilinear) and an importer script that is missing or older, and fixes them on ``OK``. Materials you extracted by hand are listed and left alone.
 * ``Unity importer, always installed``: the script's version, ``Show in File Manager`` and ``Sync Importer Script``.
 * ``Remove Integration``: nothing in the Unity project is changed.
 
@@ -216,7 +216,7 @@ Integrate with Unreal Engine
 What you get in Unreal
 ~~~~~~~~~~~~~~~~~~~~~~
 
-* Canvas textures: **nearest filter, no mipmaps**, sharp at any distance.
+* Canvas textures: **nearest filter, no mipmaps**, sharp at any distance (the ``Default`` filter with mipmaps when the texture is on ``Linear``, see :ref:`filtering-exports`).
 * Each canvas slot of the model gets an **unlit material**, masked when the canvas has transparent texels and opaque otherwise.
 * **Saves arrive in the open editor in a few seconds**, with no prompt (while ``Update Unreal Automatically`` is on).
 * A slot you gave your own material is left alone, and so is every asset that doesn't come from Pixel Art Studio. Your ``.uproject`` and config files are never edited.
@@ -278,7 +278,7 @@ What lands in the folder:
      - ``<name>.fbx`` and one ``<canvas>.png`` per canvas
 
 * **GLB and glTF arrive unlit with crisp pixels** (:ref:`unlit-pixel-art-in-gltf`).
-* **FBX can't carry unlit or nearest filtering**: the texture arrives, but the tool you import into has to be set to nearest (point) filtering itself.
+* **FBX can't carry unlit or nearest filtering**: the texture arrives, but the tool you import into has to be set to nearest (point) filtering itself. A texture on ``Linear`` goes out with the seam padding in its PNG.
 * FBX also has ``Transform`` (``Apply Transform`` or ``Keep Armature Safe``, picked for you the first time, the same as Unity's).
 * Switching the format leaves the old files in the folder.
 * ``Stop Exporting``: stops exporting this scene, and the files already written stay where they are.

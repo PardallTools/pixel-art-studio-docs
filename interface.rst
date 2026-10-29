@@ -34,7 +34,7 @@ Press :kbd:`N` in the 3D Viewport or in the Image Editor (the UV Editor too) and
      - :doc:`brushes-and-patterns`
    * - ``Setup``
      - Closed
-     - Density preset, ``Setup Viewport``, ``Paint On`` (the texture the model paints on), ``Setup Pixel Art Canvas``, ``Remove Unused Textures``, ``Snap Selection to Pixel Grid``, ``Add 1m Cube`` and the warning line
+     - Density preset, ``Setup Viewport``, ``Paint On`` (the texture the model paints on), ``Filtering``, ``Setup Pixel Art Canvas``, ``Remove Unused Textures``, ``Snap Selection to Pixel Grid``, ``Add 1m Cube`` and the warning line
      - :doc:`setup-and-canvas`
    * - ``UV``
      - Closed

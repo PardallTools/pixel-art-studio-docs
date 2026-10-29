@@ -109,6 +109,15 @@ _static/images/v2/avoid-shearing.png | Two close ups of the same beveled crate e
 _static/images/v2/joined-faces-layout-menu.png | UV panel, Joined Faces (UVs Together) list with a group picked, the Group Layout menu OPEN (arrow button under the minus and the select button): the title "Joined 1: Relax" and the three entries Relax, Keep Aspect, Keep Shape with their icons | dachshund
 _static/images/v2/uv-groups-highlight.png | Edit Mode, the pointer hovering a handle strip: the stacked group lit in its color with the stack icon on every strip, in the 3D Viewport AND in the UV Editor beside it. Second group (joined head) visible but unlit | flashlight
 
+== texture-filtering.rst ==
+_static/images/v2/seam-padding-before-after.png | Not from the pipeline: copied from the add-on's devdocs/linear-seams-probes/renders/before-after.png (the reported model, front and back): Closest, Linear before Seam Padding, Linear with Seam Padding. Retake on an original model through the pipeline if this one has to go.
+_static/images/v2/texture-filtering-row.png | Setup panel crop in the 3D Viewport, the crate painted: the Paint On row and the Filtering row under it with the dropdown open, Closest, Linear and N64 (3 Point).
+_static/images/v2/texture-filtering-question.png | The question Linear asks on the painted crate laid out at Margin (px) 1: "The UV islands are 1 texel apart: seams show under Linear filtering" / "Lay the UVs out again 4 texels apart? Your painting is kept", Lay Out Again and Not Now. The popup over the 3D Viewport, the crate behind it.
+_static/images/v2/texture-filtering-setup-note.png | The same crate after Not Now: Setup panel crop with the Filtering row on Linear, "UV islands 1 texel apart:" / "seams show while filtered" and Lay Out Again under it.
+_static/images/v2/seam-padding-image-editor.png | Image Editor on the crate's canvas after Lay Out Again, the texture on Linear: the islands 4 texels apart with the padding around each, Layers panel open showing "Seam padding fills the margin" / "while the texture is filtered" at its bottom. The padding wraps round the canvas edges too.
+_static/images/v2/unwrap-options-filtered-margin.png | UV panel, Unwrap Options open on the crate with the texture on Linear and Margin (px) typed down to 1: "Filtered: laid out at 2" under it. Also on: uv-tools.rst.
+(all from `shots/filtering_stills.py`)
+
 == density-zones.rst ==
 _static/images/v2/density-zones-head-and-body.png | The dachshund with two zones after the tutorial (head 100 px/m, body 50 px/m), Pixel Grid overlay on (or the grid layer): small texels on the head, big ones on the body. Painted if possible | dachshund
 _static/images/v2/density-zones-panel.png | 3D Viewport sidebar, Density Zones panel open after the tutorial: Detect Density Zones with the info button, the list with "Body 50" and "Head 100" (face counts), the column of buttons, Pixel Aspect + Measure Aspect, Apply to UVs / Apply to Faces, Grid: Zone / Average, Grid Follows the Face ticked, the trash icon | dachshund

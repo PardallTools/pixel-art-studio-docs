@@ -39,7 +39,7 @@ Summary of features:
   - Non-destructible **adjustments** (brightness and contrast, color curves and HSL), stackable, per layer.
   - **Clipping layers and transparency masks** like Photoshop and Krita.
   - Export layers, groups or the whole texture as PNG and paste or import images as layers.
-  - **Texture Dilation**: the colors of the art grown into the transparent texels around it, so no seam shows at the edges of the UV islands.
+  - **Texture Dilation**: the colors of the art grown into the transparent texels around it, so the edges of the UV islands don't pull the background in.
 
 - One-click pixel size and **pixel density** setup with predefined presets, as well texel density detection for existing meshes (you can have chunky pixels and fine, detailed pixels).
 - One-click setup buttons to **setup the viewport for pixel art** (grid size and snapping adjusted to the pixel size) and to UV unwrap the model for instant pixel art painting.
@@ -48,6 +48,8 @@ Summary of features:
    - ``Stack UVs``: paint one face and see it on all of them (barrel staves, cylinder sides, crate planks).
    - ``Keep UVs Together (Join)``: curved parts stay one clean island. For organic models, join their faces and tweak the ``Unwrap Options`` if needed.
    - Several meshes on the same texture are unwrapped together, in one packed layout with no overlaps.
+
+- **Texture Filtering**: ``Closest`` (the pixel art look), ``Linear`` or ``N64 (3 Point)``, with **Seam Padding** so a filtered texture doesn't show a step at every UV seam, in Blender and in the game engines.
 
 - **Density Zones** (*optional*): assign and manage texel density values per face, allowing for **uniform pixel size across the whole mesh or different pixel sizes per face**.
 
@@ -111,6 +113,7 @@ See the :doc:`support` page.
    quick-setup
    pixel-density
    uv-tools
+   texture-filtering
    density-zones
    painting-tools
    brushes-and-patterns
