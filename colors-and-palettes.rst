@@ -32,7 +32,7 @@ Primary and secondary colors
 
 * **Primary color** (left, black by default): what the tools paint with.
 * **Secondary color** (right, white by default): the gaps of a fill pattern, the ``Secondary Color`` fill of the Rectangle, the Ellipse and the Path, and the end color of the Gradient.
-* Click either color for Blender's popup picker, with the ``Hex`` field and the alpha (a color with alpha below 1 paints that transparent, **one coat per stroke**, like ``Opacity``: going over the same pixels again in the same stroke doesn't darken them).
+* Click either color for Blender's popup picker, with the ``Hex`` field and the alpha.
 * **Swap**: the refresh icon right of the two colors, or :kbd:`Alt+X` while a tool is armed (:kbd:`X` in ``Pixel Art Studio Only``).
 
 Swatches
