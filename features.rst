@@ -80,6 +80,7 @@ Every drawing, selection and layer tool works in the **3D Viewport and in the Im
   * **Marquee** (:kbd:`Shift+Alt+M`), **Ellipse Select**, **Lasso** (:kbd:`Shift+Alt+K`) and **Magic Wand** (:kbd:`Shift+Alt+W`) (while a selection is active, tools affect only the selected pixels).
 
     * :kbd:`Shift` adds to selection, :kbd:`Alt` removes from selection (with any of the drag tools).
+    * :kbd:`Shift` pressed during the drag makes a perfect square (``Marquee``) or circle (``Ellipse Select``).
 
   * **Selecting in 3D is per texel**: select what you see on the mesh, and it's the same selection in the texture.
   * **Drag and move selections**: directly in the texture in the Image Editor and on the model in 3D, **across the faces like a sticker**, even across separate UV islands. :kbd:`Ctrl` while dragging duplicates the selection, :kbd:`Shift` holds it to one axis.

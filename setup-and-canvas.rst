@@ -163,12 +163,15 @@ What you get:
 .. warning::
     The wizard doesn't unwrap. It scales the UVs the model already has. A model with no UVs, overlapping UVs or a layout that runs off the texture needs ``Quick Unwrap Model`` afterwards (see :doc:`uv-tools`).
 
+.. _several-materials:
+
 .. note::
     What happens with a model that already has materials?
 
     * **No material**: the wizard's material is added.
     * **One material**: the wizard's material takes its place.
-    * **Several materials**: the wizard adds its material in a new slot and leaves yours alone. Assign it to the faces you want to paint (``Edit Mode > Material > Assign``), the report says so too.
+    * **Several materials, no texture in any** (for example, a character's face model split into ``M_Face`` and ``M_Hair``): **every face paints the new texture and each material keeps its name and its faces**, it just becomes unlit, showing the texture. A material another object also uses, or one with an image in it (a normal map), is left as it was and a copy named after it takes its faces. Blender's own ``Material`` names become ``M_<texture>_1``, ``M_<texture>_2``. The report names them. Quick Setup's ``Create Texture`` does the same.
+    * **Several materials with a texture among them**: the wizard adds its material in a new slot and leaves yours alone. Assign it to the faces you want to paint (``Edit Mode > Material > Assign``), the report says so too.
 
 * **Select only the model you're setting up**: the wizard scales the UVs of every selected mesh, and only the active one gets the material.
 * **Running it again makes a second texture** and scales the UVs again. To keep painting the texture you already have, select it in ``Paint On``. ``Remove Unused Textures`` cleans up the ones nothing uses any more.

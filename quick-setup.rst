@@ -106,7 +106,7 @@ Step 2: create the texture
 * ``Setup Viewport``: runs it too, with the parts ticked under the arrow (see :ref:`setup-viewport`).
 * ``Back`` and ``Create Texture``.
 
-``Create Texture`` leaves the mode and makes everything as **one undo step**: the texture with its layers, the unlit material, the UVs, the scene's density and the viewport. The status bar says ``T_Cube ready (512x512) at 50 px/m``.
+``Create Texture`` leaves the mode and makes everything as **one undo step**: the texture with its layers, the unlit material, the UVs, the scene's density and the viewport. The status bar says ``T_Cube ready (512x512) at 50 px/m``. A model split into several materials (for example, a character's face with ``M_Face`` and ``M_Hair``) keeps the materials, each one painting the new texture (see :ref:`what happens to a model's materials <several-materials>`).
 
 .. _quick-setup-try:
 

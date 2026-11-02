@@ -32,7 +32,7 @@ Primary and secondary colors
 
 * **Primary color** (left, black by default): what the tools paint with.
 * **Secondary color** (right, white by default): the gaps of a fill pattern, the ``Secondary Color`` fill of the Rectangle, the Ellipse and the Path, and the end color of the Gradient.
-* Click either color for Blender's popup picker, with the ``Hex`` field and the alpha (a color with alpha below 1 paints that transparent).
+* Click either color for Blender's popup picker, with the ``Hex`` field and the alpha.
 * **Swap**: the refresh icon right of the two colors, or :kbd:`Alt+X` while a tool is armed (:kbd:`X` in ``Pixel Art Studio Only``).
 
 Swatches
@@ -41,7 +41,7 @@ Swatches
 .. image:: _static/images/v2/colors-and-palettes-swatches.png
 
 * ``+`` adds the primary color as a swatch.
-* Click a swatch to paint with it (the swatch of the current color is drawn pressed).
+* Click a swatch to paint with it (the swatch of the current color has a black or white ring around it).
 * :kbd:`Ctrl+click` a swatch removes it (right click > ``Remove Swatch`` too).
 * ``Next Swatch`` (:kbd:`Alt+X` in ``Pixel Art Studio Only``, while a tool is armed) walks your swatches: the primary color becomes the next swatch, wrapping around at the end.
 * The swatch you last clicked is where the ``Swatches`` ramp of ``Color Jitter`` and the ``Color Replace`` ramp of the Shading tool start.

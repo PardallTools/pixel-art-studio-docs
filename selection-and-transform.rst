@@ -30,6 +30,7 @@ Adding and removing
 -------------------
 
 * :kbd:`Shift` adds to the selection, :kbd:`Alt` removes from the selection (when starting a new shape, or with a Magic Wand click).
+* :kbd:`Shift` **pressed during the drag makes a perfect square** with the Marquee, **or a perfect circle** with the Ellipse. Held from the start of the drag it adds instead: let go of it and press it again to add a square.
 * The mode dropdown under the toolbar sets what a plain drag does: ``Replace`` (default), ``Add`` or ``Remove``. :kbd:`Shift` and :kbd:`Alt` win over it for that one drag.
 * The tool icon at the pointer shows a ``+`` or a ``-`` when the next drag adds or removes.
 * **Select All** (:kbd:`Ctrl+Shift+A`), **Deselect** (:kbd:`Shift+Alt+A`) and **Invert Selection** (:kbd:`Ctrl+Shift+I`) are the three icons after the selection tools (invert with nothing selected selects everything).
