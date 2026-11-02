@@ -170,7 +170,7 @@ What you get:
 
     * **No material**: the wizard's material is added.
     * **One material**: the wizard's material takes its place.
-    * **Several materials, no texture in any** (a new model you split into ``M_Face`` and ``M_Hair``, for example): **every face paints the new texture and each material keeps its name and its faces**, it just becomes unlit, showing the texture. A material another object also uses, or one with an image in it (a normal map), is left as it was and a copy named after it takes its faces. Blender's own ``Material`` names become ``M_<texture>_1``, ``M_<texture>_2``. The report names them. Quick Setup's ``Create Texture`` does the same.
+    * **Several materials, no texture in any** (for example, a character's face model split into ``M_Face`` and ``M_Hair``): **every face paints the new texture and each material keeps its name and its faces**, it just becomes unlit, showing the texture. A material another object also uses, or one with an image in it (a normal map), is left as it was and a copy named after it takes its faces. Blender's own ``Material`` names become ``M_<texture>_1``, ``M_<texture>_2``. The report names them. Quick Setup's ``Create Texture`` does the same.
     * **Several materials with a texture among them**: the wizard adds its material in a new slot and leaves yours alone. Assign it to the faces you want to paint (``Edit Mode > Material > Assign``), the report says so too.
 
 * **Select only the model you're setting up**: the wizard scales the UVs of every selected mesh, and only the active one gets the material.
