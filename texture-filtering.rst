@@ -5,8 +5,6 @@ Texture Filtering and Seam Padding
 
 A canvas is ``Closest`` by default: **every texel a sharp square**, the pixel art look. Want the texture smooth, or the N64 look? ``Texture Filtering`` switches it to ``Linear`` or ``N64 (3 Point)``, and **Seam Padding** keeps the UV seams from showing a step at every face, in Blender and in the game engines.
 
-.. image:: _static/images/v2/seam-padding-before-after.png
-
 Left to right: ``Closest``, ``Linear`` before Seam Padding (a step at every seam) and ``Linear`` with Seam Padding.
 
 .. _texture-filtering-row:
