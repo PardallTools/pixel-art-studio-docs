@@ -3,6 +3,9 @@ Installation
 
 Pixel Art Studio works on **Blender 3.6 through 5.x**, with no external dependencies.
 
+.. note::
+    **1.5 is the last version supporting Blender 3 and 4.** Updates after it are made and tested for Blender 5 and newer only. On Blender 3.6 to 4.x, keep 1.5.
+
 Download
 ------------------------------
 

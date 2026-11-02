@@ -46,6 +46,7 @@ Why did ``Linear`` show the seams? ``Quick Unwrap Model`` gives every face an is
 * **It never becomes paint**: it isn't in your layers, the eyedropper on a padded texel picks the color it was copied from, and the texture brought back in as a layer (``Import PNG``, ``Paste Image as Layer``) leaves it out.
 * **The Layers panel says so** while it's on: ``Seam padding fills the margin`` / ``while the texture is filtered``.
 * **It follows the UVs**: after an unwrap or UVs moved by hand it's laid again (on a big texture it takes a moment, the seams show until it's there). UVs edited in Edit Mode get it when you leave Edit Mode.
+* ``Hard Edges`` (under the ``Filtering`` row, off by default): **for a texture with the light painted in**, where a lit face meets a dark one at a hard edge. On, the padding stops at the edges marked sharp and at the edges sharper than the angle beside it (``60°`` by default, ``180°`` for the sharp edges only), so **each face's margin keeps its own color there** and the edge stays crisp.
 
 .. image:: _static/images/v2/seam-padding-image-editor.png
 

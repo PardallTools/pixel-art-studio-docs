@@ -16,6 +16,8 @@ Which Blender versions does it work with?
 
 Blender 3.6 through 5.x. There are two zips with the same add-on inside: the classic one works on every supported version, and the extension one needs Blender 4.2 or newer. See :doc:`installation`.
 
+**1.5 is the last version supporting Blender 3 and 4.** Updates after it are made and tested for Blender 5 and newer only.
+
 Does it have shortcuts / keymaps? Can I customize them?
 -------------------------------------------------------
 
